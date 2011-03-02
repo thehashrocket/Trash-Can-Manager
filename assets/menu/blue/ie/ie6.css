@@ -1,0 +1,9 @@
+body {
+	behavior: url("ie/csshover3.htc");
+}
+.menu li .drop {
+	background:url("dropie.png") no-repeat right 5px;
+}
+.menu li:hover .drop {
+	background:url("dropiehover.png") no-repeat right 4px;
+}

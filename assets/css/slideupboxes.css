@@ -1,0 +1,52 @@
+@charset "utf-8";
+/* CSS Document */
+
+.slide-up-boxes a { 
+			display: block; 
+			height: 130px; 
+			margin: 0 0 20px 0; 
+			background: rgba(215, 215, 215, 0.5); 
+			border: 1px solid #ccc; 
+			height: 65px; 
+			overflow: hidden; 
+		}
+		
+		.slide-up-boxes h5 { 
+			color: #333; 
+			text-align: center;
+			height: 65px; 
+			font: italic 18px/65px Georgia, Serif;    /* Vertically center text by making line height equal to height */
+			 opacity: 1;
+			 -webkit-transition: all 0.2s linear; 
+			 -moz-transition: all 0.2s linear; 
+			 -o-transition: all 0.2s linear;
+		}
+		
+		.slide-up-boxes a:hover h5 { 
+			margin-top: -92px; 
+			opacity: 0; 
+		}
+		
+		.slide-up-boxes div { 
+			position: relative; 
+			color: white; 
+			font: 12px/15px Georgia, Serif;
+			height: 45px; 
+			padding: 10px; 
+			opacity: 0; 
+			-webkit-transform: rotate(6deg); 
+			-webkit-transition: all 0.4s linear; 
+			-moz-transform: rotate(6deg); 
+			-moz-transition: all 0.4s linear; 
+			-o-transform: rotate(6deg); 
+			-o-transition: all 0.4s linear; 
+		}
+		.slide-up-boxes a:hover div { 
+			opacity: 1; 
+			-webkit-transform: rotate(0); 
+			-moz-transform: rotate(0); 
+			-o-transform: rotate(0); 
+		}
+		.slide-up-boxes a:nth-child(1) div { background: #c73b1b url(/assets/images/icons/48x48/Question-Mark-Icon.png) 17px 16px no-repeat; padding-left: 120px; }
+		.slide-up-boxes a:nth-child(2) div { background: #367db2 url(/assets/images/icons/48x48/Question-Mark-Icon.png) 21px 16px no-repeat; padding-left: 90px; }
+		.slide-up-boxes a:nth-child(3) div { background: #393838 url(/assets/images/icons/48x48/Question-Mark-Icon.png) 14px 16px no-repeat; padding-left: 133px; }

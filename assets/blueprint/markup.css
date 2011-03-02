@@ -1,0 +1,345 @@
+@charset "utf-8";
+body {
+    background-color: #fff;
+    font-family: Verdana, Helvetica, Sans-Serif;
+    margin: 0;
+    padding: 0;
+}
+
+#sun {
+	position:absolute;
+	z-index:-1;
+}
+
+#wrapper {
+    min-height:900px;
+}
+
+#headwrap {
+	width:100%;
+    background-color: #3333ff;
+     opacity:0.8;
+    -moz-opacity:0.8;
+    filter: alpha(opacity=80); 
+    
+}
+
+#header 
+{
+  color:White;
+  border-radius: 3px;
+  height:109px;
+
+  }
+
+#logo, #logo a {display:block;width:250px;height:63px; float:left;}
+#logo { padding:40px 0 0 20px;text-indent:-9999em;background:url(/assets/images/site-images/trash-can-manager-logo.png) no-repeat 20px 40px}
+
+#navcontainer {
+
+}
+
+#navcontact {
+	float:right;
+	position:absolute;
+	right:30px;
+	top:0px;
+	font-size:12px;
+}
+
+#bg {
+}
+
+#contentwrap {
+	width:100%;
+	position:fixed;
+	bottom:41px;
+	left:-7px;
+	height:201px;
+	z-index:2;
+}
+
+#content {
+}
+
+.newsstoryedit {
+    height: 300px;
+    overflow:auto;
+}
+
+#leftSide {
+	padding-top:20px;
+}
+
+.ui-tabs-hide {
+display:none;
+}
+
+#systemfacts {
+    background-color:#66AFFF;
+    padding-top:5px;
+}
+
+.supplier {
+	background-color:#FFF;
+	-khtml-border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	-moz-box-shadow: 3px 3px 3px #333;
+	-webkit-box-shadow: 3px 3px 3px #333;
+	box-shadow: 3px 3px 3px #333;
+}
+
+.supplierh2 {
+	background-color:#1178f7;
+	-khtml-border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+    margin-bottom: 10px;
+    height:35px;
+}
+
+.column {
+	background-image:url(/assets/images/site-images/h1-bg.jpg);
+	background-repeat:repeat-x;
+	width:100%;
+	background-color:#FFF;
+	-khtml-border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	-moz-box-shadow: 3px 3px 3px #333;
+	-webkit-box-shadow: 3px 3px 3px #333;
+	box-shadow: 3px 3px 3px #333;
+}
+
+h1, h2, h3, table, form, p {
+    margin-left:10px;
+	margin-right:10px;
+}
+
+.column h1 {
+	margin-top:5px;
+    font-family: "facitweb-1","facitweb-2", sans-serif;
+	}
+	
+.column ul, ol {
+    margin-left:10px;
+	margin-right:10px;
+}
+
+p {
+	color:#000;
+    font-family: "adobe-text-pro-1","adobe-text-pro-2", serif;
+    font-size: 14px;;
+}
+
+ul {
+	color:#000;
+	list-style-type: none;
+}
+
+.row {
+	margin-left:10px;
+}
+
+.floatleft {
+float:left;
+margin-right:.5em;
+margin-left:.25em;
+margin-bottom:.5em;
+}
+
+.floatright {
+float:right;
+margin-left:.5em;
+margin-right:.25em;
+margin-bottom:.5em;
+}
+
+.floatcenter {
+text-align:center;
+clear:both;
+}
+
+.pdf a {
+
+	background: transparent url(/assets/images/icons/48x48/pdf_file.png) no-repeat scroll left center;
+
+	line-height:43px;
+
+	padding: 15px 0 15px 50px;
+
+}
+
+.email a {
+
+	background: transparent url(/assets/images/icons/48x48/mail.png) no-repeat scroll left center;
+
+	line-height:43px;
+
+	padding: 15px 0 15px 50px;
+
+}
+
+.fax {
+
+	background: transparent url(/assets/images/icons/48x48/page.png) no-repeat scroll left center;
+
+	line-height:43px;
+
+	padding: 15px 0 15px 50px;
+
+}
+
+.phone {
+
+	background: transparent url(/assets/images/icons/48x48/mobile_phone.png) no-repeat scroll left center;
+
+	line-height:43px;
+
+	padding: 15px 0 15px 50px;
+
+}
+
+.video {
+
+	background: transparent url(/assets/images/icons/48x48/digital_camcorder.png) no-repeat scroll left center;
+
+	line-height:43px;
+
+	padding: 15px 0 15px 50px;
+
+}
+
+.notice {
+
+    background:#fff6bf;color:#514721;border-color:#ffd324;
+
+	background: url(/assets/images/icons/48x48/warning.png) no-repeat scroll left center;
+
+
+
+	line-height:43px;
+
+	padding: 15px 0 15px 50px;
+
+}
+
+textarea {
+	height:300px;
+	padding:5px;
+	width:590px;
+}
+.button	{
+	margin:20px 0 20px 10px;
+	}
+
+/*###########################################################
+				Footer
+############################################################*/
+
+
+#prefooterwrap {
+	margin-top:30px;
+	width:100%;
+}
+
+#footwrap {
+	width:100%;
+	height:120px;
+	margin-top:30px;
+}
+
+#grass {
+	background-image:url(/assets/images/site-images/grass.png);
+	background-repeat:no-repeat;
+	background-position:top;
+	height:80px;
+}
+
+#footer {
+	background-color:#F96;
+	height:35px;
+	margin:0 auto;
+	padding:0 20px;
+	-khtml-border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	border: 1px solid #F66;
+}
+
+#footer p {
+	color:#FFF;
+}
+
+#footer li li a	{
+	margin:0;
+	text-decoration:none;
+	}
+	
+/* Gallery CSS */
+
+#gallery, #upload {
+			border: 1px solid #ccc; width: 570px; padding: 10px; margin-left:10px;
+		}
+		#blank_gallery {
+			font-family: Arial; font-size: 18px; font-weight: bold;
+			text-align: center;
+		}
+		.adminthumb {
+			float: left; width: 220px; height: 100px; padding: 10px; margin: 10px; background-color: #ddd;
+		}
+        .thumb {
+			float: left; width: 150px; height: 100px; padding: 10px; margin: 10px; background-color: #ddd;
+		}
+		.thumb:hover {
+			outline: 1px solid #999;
+		}
+		img {
+			border: 0;
+		}
+		#gallery:after {
+			content: "."; visibility: hidden; display: block; clear: both; height: 0; font-size: 0;
+		}
+
+.deleteimage {
+    float:right;
+
+}
+
+/* tables */
+table.tablesorter {
+	font-family:arial;
+	/* background-color: #CDCDCD; */
+	margin:10px 0pt 15px 10px;
+	font-size: 8pt;
+	width: 100%;
+	text-align: left;
+}
+table.tablesorter thead tr th, table.tablesorter tfoot tr th {
+	background-color: #570026;
+	border: 1px solid #FFF;
+	font-size: 8pt;
+	padding: 4px;
+	color:#FFF;
+}
+table.tablesorter thead tr .header {
+	background-image: url(/assets/images/blue/bg.gif);
+	background-repeat: no-repeat;
+	background-position: center right;
+	cursor: pointer;
+}
+
+table.tablesorter thead tr .headerSortUp {
+	background-image: url(/assets/images/blue/asc.gif);
+}
+table.tablesorter thead tr .headerSortDown {
+	background-image: url(/assets/images/blue/desc.gif);
+}
+table.tablesorter thead tr .headerSortDown, table.tablesorter thead tr .headerSortUp {
+background-color: #8dbdd8;
+}
