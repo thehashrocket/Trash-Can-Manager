@@ -87,11 +87,11 @@ TABLE OF CONTENTS
 }
 .menu li .drop {
 	padding-right:21px;
-	background:url("../../../../Website Templates/Scripts/css3-mega-drop-down-menu/megadropdownmenu_files/HTML/fullwidth/blue/img/drop.png") no-repeat right 5px;
+	background:url("/assets/images/menu/img/drop.png") no-repeat right 5px;
 }
 .menu li:hover .drop {
 	padding-right:21px;
-	background:url("../../../../Website Templates/Scripts/css3-mega-drop-down-menu/megadropdownmenu_files/HTML/fullwidth/blue/img/drop.png") no-repeat right 4px;
+	background:url("/assets/images/menu/img/drop.png") no-repeat right 4px;
 }
 .menu li:hover div a {
 	color:#015b86;
@@ -308,10 +308,10 @@ TABLE OF CONTENTS
 	padding-left:36px;
 	margin-bottom:18px;
 }
-.menu .help {background:url("../../../../Website Templates/Scripts/css3-mega-drop-down-menu/megadropdownmenu_files/HTML/fullwidth/blue/img/help.png") no-repeat 0px 2px;}
-.menu .favorite {background:url("../../../../Website Templates/Scripts/css3-mega-drop-down-menu/megadropdownmenu_files/HTML/fullwidth/blue/img/favorite.png") no-repeat 0px 2px;}
-.menu .mail {background:url("../../../../Website Templates/Scripts/css3-mega-drop-down-menu/megadropdownmenu_files/HTML/fullwidth/blue/img/mail.png") no-repeat 0px 2px;}
-.menu .print {background:url("../../../../Website Templates/Scripts/css3-mega-drop-down-menu/megadropdownmenu_files/HTML/fullwidth/blue/img/print.png") no-repeat 0px 2px;}
+.menu .help {background:url("/assets/images/menu/img/help.png") no-repeat 0px 2px;}
+.menu .favorite {background:url("/assets/images/menu/img/favorite.png") no-repeat 0px 2px;}
+.menu .mail {background:url("/assets/images/menu/img/mail.png") no-repeat 0px 2px;}
+.menu .print {background:url("/assets/images/menu/img/print.png") no-repeat 0px 2px;}
 
 /* Images styles */
 
@@ -402,7 +402,7 @@ TABLE OF CONTENTS
 }
 .menu li ul li:hover {
 	background:none;
-	background: #F4F4F4\9;
+	background: #F4F4F4;
 	border:none;
 	padding:0;
 	margin:0;
@@ -434,13 +434,13 @@ TABLE OF CONTENTS
 /* Other lists styles */
 
 .menu li .plus li {
-	background: url("../../../../Website Templates/Scripts/css3-mega-drop-down-menu/megadropdownmenu_files/HTML/fullwidth/blue/img/plus.png") left 6px no-repeat;
+	background: url("/assets/images/menu/img/plus.png") left 6px no-repeat;
 	margin:0px 0px 4px 0px;
 	padding:0px 0px 0px 21px;
 	width:109px;
 }
 .menu li .plus li:hover {
-	background: url("../../../../Website Templates/Scripts/css3-mega-drop-down-menu/megadropdownmenu_files/HTML/fullwidth/blue/img/plus.png") left 6px no-repeat;
+	background: url("/assets/images/menu/img/plus.png") left 6px no-repeat;
 	padding:0px 0px 0px 21px;
 	margin:0px 0px 4px 0px;
 }

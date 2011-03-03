@@ -140,7 +140,7 @@
         
         <?php else : ?>
 
-            <li><a href="/auth/login">Log In</a></li>
+           <!-- <li><a href="/auth/login">Log In</a></li> -->
 
         <?php endif; ?>
         
@@ -572,147 +572,15 @@
         
         
         
+        <?php if ($this->tank_auth->is_logged_in()) : ?>
+        <li class="right"><a href="/auth/logout">Log Out</a><!-- Begin sixth Item -->
+        <?php else : ?>
+
+            <li class="right"><a href="/auth/login">Log In</a>
+
+        <?php endif; ?>
         
-        <li><a href="#" class="drop">Sixth</a><!-- Begin sixth Item -->
-        
-        
-            <div id="dropdown_fullwidth_item6"><!-- Begin dropdown_fullwidth container -->
-            
-            
-                <div class="col_1 firstcolumn">
-                
-                    <ul>
-                        <li><a href="#">FreelanceSwitch</a></li>
-                        <li><a href="#">Creattica</a></li>
-                        <li><a href="#">WorkAwesome</a></li>
-                        <li><a href="#">Mac Apps</a></li>
-                        <li><a href="#">Web Apps</a></li>
-                        <li><a href="#">NetTuts</a></li>
-                        <li><a href="#">VectorTuts</a></li>
-                        <li><a href="#">PsdTuts</a></li>
-                        <li><a href="#">PhotoTuts</a></li>
-                        <li><a href="#">ActiveTuts</a></li>
-                        <li><a href="#">Design</a></li>
-                        <li><a href="#">Logo</a></li>
-                        <li><a href="#">Flash</a></li>
-                        <li><a href="#">Illustration</a></li>
-                        <li><a href="#">More...</a></li>
-                    </ul>   
-                     
-                </div>
-            
-                <div class="col_1">
-                
-                    <ul>
-                        <li><a href="#">NetTuts</a></li>
-                        <li><a href="#">VectorTuts</a></li>
-                        <li><a href="#">FreelanceSwitch</a></li>
-                        <li><a href="#">Creattica</a></li>
-                        <li><a href="#">Logo</a></li>
-                        <li><a href="#">Flash</a></li>
-                        <li><a href="#">Illustration</a></li>
-                        <li><a href="#">PsdTuts</a></li>
-                        <li><a href="#">PhotoTuts</a></li>
-                        <li><a href="#">WorkAwesome</a></li>
-                        <li><a href="#">Mac Apps</a></li>
-                        <li><a href="#">Web Apps</a></li>
-                        <li><a href="#">ActiveTuts</a></li>
-                        <li><a href="#">Design</a></li>
-                        <li><a href="#">More...</a></li>
-                    </ul>   
-                     
-                </div>
-            
-                <div class="col_1">
-                
-                    <ul>
-                        <li><a href="#">Mac Apps</a></li>
-                        <li><a href="#">Web Apps</a></li>
-                        <li><a href="#">NetTuts</a></li>
-                        <li><a href="#">VectorTuts</a></li>
-                        <li><a href="#">FreelanceSwitch</a></li>
-                        <li><a href="#">Creattica</a></li>
-                        <li><a href="#">Design</a></li>
-                        <li><a href="#">Logo</a></li>
-                        <li><a href="#">Flash</a></li>
-                        <li><a href="#">Illustration</a></li>
-                        <li><a href="#">WorkAwesome</a></li>
-                        <li><a href="#">PsdTuts</a></li>
-                        <li><a href="#">PhotoTuts</a></li>
-                        <li><a href="#">ActiveTuts</a></li>
-                        <li><a href="#">More...</a></li>
-                    </ul>   
-                     
-                </div>
-            
-                <div class="col_1">
-                
-                    <ul>
-                        <li><a href="#">Mac Apps</a></li>
-                        <li><a href="#">VectorTuts</a></li>
-                        <li><a href="#">PsdTuts</a></li>
-                        <li><a href="#">PhotoTuts</a></li>
-                        <li><a href="#">Web Apps</a></li>
-                        <li><a href="#">NetTuts</a></li>
-                        <li><a href="#">FreelanceSwitch</a></li>
-                        <li><a href="#">Creattica</a></li>
-                        <li><a href="#">Design</a></li>
-                        <li><a href="#">Logo</a></li>
-                        <li><a href="#">Flash</a></li>
-                        <li><a href="#">WorkAwesome</a></li>
-                        <li><a href="#">ActiveTuts</a></li>
-                        <li><a href="#">Illustration</a></li>
-                        <li><a href="#">More...</a></li>
-                    </ul>   
-                     
-                </div>
-            
-                <div class="col_1">
-                
-                    <ul>
-                        <li><a href="#">FreelanceSwitch</a></li>
-                        <li><a href="#">VectorTuts</a></li>
-                        <li><a href="#">PsdTuts</a></li>
-                        <li><a href="#">Mac Apps</a></li>
-                        <li><a href="#">Design</a></li>
-                        <li><a href="#">PhotoTuts</a></li>
-                        <li><a href="#">Creattica</a></li>
-                        <li><a href="#">WorkAwesome</a></li>
-                        <li><a href="#">Logo</a></li>
-                        <li><a href="#">Web Apps</a></li>
-                        <li><a href="#">NetTuts</a></li>
-                        <li><a href="#">ActiveTuts</a></li>
-                        <li><a href="#">Flash</a></li>
-                        <li><a href="#">Illustration</a></li>
-                        <li><a href="#">More...</a></li>
-                    </ul>   
-                     
-                </div>
-            
-                <div class="col_1">
-                
-                    <ul>
-                        <li><a href="#">WorkAwesome</a></li>
-                        <li><a href="#">Mac Apps</a></li>
-                        <li><a href="#">PhotoTuts</a></li>
-                        <li><a href="#">ActiveTuts</a></li>
-                        <li><a href="#">FreelanceSwitch</a></li>
-                        <li><a href="#">Logo</a></li>
-                        <li><a href="#">Web Apps</a></li>
-                        <li><a href="#">NetTuts</a></li>
-                        <li><a href="#">Flash</a></li>
-                        <li><a href="#">Creattica</a></li>
-                        <li><a href="#">VectorTuts</a></li>
-                        <li><a href="#">PsdTuts</a></li>
-                        <li><a href="#">Design</a></li>
-                        <li><a href="#">Illustration</a></li>
-                        <li><a href="#">More...</a></li>
-                    </ul>   
-                     
-                </div>
-                
-            
-            </div><!-- End dropdown_fullwidth container -->
+
             
         
         </li><!-- End sixth Item -->
@@ -720,77 +588,15 @@
     
     
     
-        <li class="right"><a href="#" class="drop">Contact</a><!-- Begin Contact Item -->
+        <li><a href="#" class="drop">Contact</a><!-- Begin Contact Item -->
             
             
-            <div id="dropdown_fullwidth_item_right"><!-- Begin dropdown_fullwidth container -->
+            <div class="dropdown_2columns"><!-- Begin dropdown_fullwidth container -->
         
 
-                <div class="col_2 firstcolumn">
-
-                    <h2>More examples</h2>
-
-                    <img src="/assets/images/menu/img/01.jpg" width="70" height="70" class="img_left imgshadow_light" alt="" />
-                    
-                    <p>Maecenas eget eros lorem, nec pellentesque lacus. Aenean dui orci, rhoncus sit amet tristique eu, tristique sed odio. Praesent ut interdum elit. Maecenas imperdiet, nibh vitae rutrum vulputate, lorem sem condimentum. Aliquam elementum felis quis felis consequat scelerisque. Fusce sed lectus at arcu mollis accumsan at nec nisi.<a href="#">Read more...</a></p>
-
-                    <h2 class="pusher">Lorem Ipsum content</h2>
-
-                    <img src="/assets/images/menu/img/02.jpg" width="70" height="70" class="img_right imgshadow_light" alt="" />
-                    
-                    <p>Curabitur ut sodales odio. Cras quis mi ac nisl euismod tempor sed a arcu. Vestibulum faucibus fermentum purus ac tempor. Maecenas ut leo quis ipsum vulputate varius. Pellentesque eget orci eros. Maecenas eleifend adipiscing leo quis gravida.<a href="#">Read more...</a></p><br />
-
-                </div>
-
-                <div class="col_2">
-
-                    <h2>Other lists</h2>
-
-                    <div class="col_1 firstcolumn">
-                    
-                        <ul>
-                            <li><a href="#">WorkAwesome</a></li>
-                            <li><a href="#">Mac Apps</a></li>
-                            <li><a href="#">PhotoTuts</a></li>
-                            <li><a href="#">ActiveTuts</a></li>
-                            <li><a href="#">FreelanceSwitch</a></li>
-                            <li><a href="#">Logo</a></li>
-                            <li><a href="#">Web Apps</a></li>
-                            <li><a href="#">NetTuts</a></li>
-                            <li><a href="#">Flash</a></li>
-                            <li><a href="#">Creattica</a></li>
-                            <li><a href="#">VectorTuts</a></li>
-                            <li><a href="#">PsdTuts</a></li>
-                            <li><a href="#">Design</a></li>
-                            <li><a href="#">Illustration</a></li>
-                            <li><a href="#">More...</a></li>
-                        </ul>   
-                         
-                    </div>
                 
-                    <div class="col_1">
-                    
-                        <ul>
-                            <li><a href="#">FreelanceSwitch</a></li>
-                            <li><a href="#">VectorTuts</a></li>
-                            <li><a href="#">PsdTuts</a></li>
-                            <li><a href="#">Mac Apps</a></li>
-                            <li><a href="#">Design</a></li>
-                            <li><a href="#">PhotoTuts</a></li>
-                            <li><a href="#">Creattica</a></li>
-                            <li><a href="#">WorkAwesome</a></li>
-                            <li><a href="#">Logo</a></li>
-                            <li><a href="#">Web Apps</a></li>
-                            <li><a href="#">NetTuts</a></li>
-                            <li><a href="#">ActiveTuts</a></li>
-                            <li><a href="#">Flash</a></li>
-                            <li><a href="#">Illustration</a></li>
-                            <li><a href="#">More...</a></li>
-                        </ul>   
-                         
-                    </div>
-                    
-                </div>
+
+                
 
                 <div class="col_2">
                 
@@ -814,12 +620,12 @@
                     <h2 class="pusher">Find us on social networks</h2>
                     
                     <ul class="social">
-                        <li><a href="#"><img src='img/twitter.png' alt="" /><span>Twitter</span></a></li>
-                        <li><a href="#"><img src='img/facebook.png' alt="" /><span>Facebook</span></a></li>
-                        <li><a href="#"><img src='img/flickr.png' alt="" /><span>Flickr</span></a></li>
-                        <li><a href="#"><img src='img/rss.png' alt="" /><span>RSS Feed</span></a></li>
-                        <li><a href="#"><img src='img/technorati.png' alt="" /><span>Technorati</span></a></li>
-                        <li><a href="#"><img src='img/delicious.png' alt="" /><span>Delicious</span></a></li>
+                        <li><a href="#"><img src='/assets/images/menu/img/twitter.png' alt="" /><span>Twitter</span></a></li>
+                        <li><a href="#"><img src='/assets/images/menu/img/facebook.png' alt="" /><span>Facebook</span></a></li>
+                        <li><a href="#"><img src='/assets/images/menu/img/flickr.png' alt="" /><span>Flickr</span></a></li>
+                        <li><a href="#"><img src='/assets/images/menu/img/rss.png' alt="" /><span>RSS Feed</span></a></li>
+                        <li><a href="#"><img src='/assets/images/menu/img/technorati.png' alt="" /><span>Technorati</span></a></li>
+                        <li><a href="#"><img src='/assets/images/menu/img/delicious.png' alt="" /><span>Delicious</span></a></li>
                     </ul>
 
                 </div>

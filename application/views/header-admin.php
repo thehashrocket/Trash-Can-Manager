@@ -14,7 +14,7 @@
 
 <div id="navcontainer" class="container clear">
 
-  <?php include('menu-admin.php'); ?>
+  <?php include('menu.php'); ?>
 
   </div><!-- End Navigation -->
 
