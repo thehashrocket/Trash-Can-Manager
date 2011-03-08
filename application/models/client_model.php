@@ -58,7 +58,7 @@ class Client_model extends CI_Model {
             redirect($goback);
         }
 
-        /* Create Custpomer */
+        /* Create Client */
         else {
             $data2 = array(
                 'companyname' => $companyname,
@@ -81,6 +81,7 @@ class Client_model extends CI_Model {
         $this->db->select('*');
         $this->db->from('trashcans');
         $this->db->where('userid', $userid);
+        $this->db->where('is_archived',0);
         return $this->db->get();
     }
 
@@ -98,13 +99,12 @@ class Client_model extends CI_Model {
 
     function updateTrashCan($userid, $idtrashcans, $cansize, $cantype, $price, $description, $goback) {
         $this->db->select('*');
-        $this->db->where('idtrashcan', $idtrashcans);
-
         $this->db->from('trashcans');
+        $this->db->where('idtrashcans', $idtrashcans);
         $query = $this->db->get();
 
         if ($query->num_rows() > 0) {
-            /* Update Client */
+            /* Update Trash Can */
 
             $data1 = array(
                 'userid' => $userid,
@@ -121,7 +121,7 @@ class Client_model extends CI_Model {
             redirect($goback);
         }
 
-        /* Create Custpomer */
+        /* Create Trash Can */
         else {
             $data2 = array(
                 'userid' => $userid,

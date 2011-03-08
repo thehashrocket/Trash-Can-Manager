@@ -115,6 +115,18 @@ display:none;
 	box-shadow: 3px 3px 3px #333;
 }
 
+.comment {
+    -khtml-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    background-color:#add8e6;
+    border-radius: 3px;
+    border: solid thin black;
+    margin-bottom:10px;
+    padding-left:10px;
+    padding-top:5px;
+}
+
 h1, h2, h3, table, form, p {
     margin-left:10px;
 	margin-right:10px;

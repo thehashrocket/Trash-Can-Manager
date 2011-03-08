@@ -1,5 +1,5 @@
 <div id="column1" class="column span-24" style=" margin-top:20px;">
-<h1>Stockbridge Control Panel</h1>
+<h1>Trash Can MAnager Control Panel: Customer Edit</h1>
 <hr />
 
     <div class="span-10">

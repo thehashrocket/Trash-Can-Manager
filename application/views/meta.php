@@ -1,7 +1,9 @@
 <title><?= $page_title; ?></title>
-<meta name="description" content="Stockbridge Solar Energy Group serves the solar energy needs of businesses and municipalities in the Western United States including Arizona, California, New Mexico, Utah, Nevada and California" />
-<meta name="keywords" content="stockbridge electric solar energy arizona california new mexico utah nevada california municipal business education government" />
+<meta name="description" content="Trash Can Manager is the complete solution for Billing and Customer Relationship Management for Waste Management and Garbage Companies" />
+<meta name="keywords" content="trash can garbage manager billing customer relation relationship manager management invoice invoicing contact" />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <meta name="google-site-verification" content="Aj1UVen0m1r1QbPMMTDuc3AZFEoy8Mtfe7IjUw8Ruog" />
 
 <meta name="DC.title" content="Trash Can Manager" />
 <meta name="geo.region" content="US-AZ" />

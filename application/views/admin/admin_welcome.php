@@ -31,7 +31,7 @@
     </thead>
     <tbody>
 
-	<?php if(isset($customers)) : foreach ($customers->result() as $row): ?>
+	<?php if($customers->num_rows() > 0) : foreach ($customers->result() as $row): ?>
 
 		<tr>
         	<td>
@@ -101,12 +101,12 @@
             <div class="span-7" id="pastdues">
                 <h3>Past Due Accounts</h3>
                 <p>&nbsp;</p>
-                <?php if (isset($pastdueinvoices)) : foreach ($pastdueinvoices->result() as $row) : ?>
+               <?php /* ?> <?php if($pastdueinvoices->num_rows() > 0) : foreach ($pastdueinvoices->result() as $row) : ?>
                 <?php endforeach; ?>
 
                 <?php else : ?>
                     <p class="notice">No Past Due Invoices</p>
-                <?php endif; ?>
+                <?php endif; ?> <?php */ ?>
             </div><!-- End Past Due Accounts -->
 
 

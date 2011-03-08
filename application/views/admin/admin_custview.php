@@ -1,5 +1,5 @@
 <div id="column1" class="column span-24" style=" margin-top:20px;">
-<h1>Stockbridge Control Panel</h1>
+<h1>Trash Can Manager: Customer View</h1>
 <hr />
 
     <div class="span-10">
@@ -14,85 +14,109 @@
 
 
 
-    <div id="EditCustomer" class="container">
+    <div id="ViewCustomer" class="container">
 
-
-
-
-       <?php if(count($customer)) : foreach ($customer->result() as $row): ?>
+       <?php if($customer->num_rows() > 0) : foreach ($customer->result() as $row): ?>
 
         <div class="container">
 
             <div class="span-9 colborder">
 
                 <div class="span-9">
-                    <div class="span-4 colborder">
+                    <h2>Customer Details</h2>
+                    <div class="span-8 last">
                         <p>
-                            <?=$row->lastname ?>
-                        </p>
-                    </div>
-
-                    <div class="span-4 last">
-                        <p>
-                            <?=$row->firstname ?>
+                            Name: <?=$row->lastname ?>, <?=$row->firstname ?>
                         </p>
                     </div>
                 </div>
 
                 <div class="span-9">
-                    <div class="span-4 colborder">
+                    <div class="span-8 last">
                         <p>
-                            <?=$row->street1 ?>
+                            Address: <?=$row->street1 ?>, <?=$row->street2 ?>
                         </p>
-
-                    </div>
-                    <div class="span-4 last">
-                        <p>
-                            <?=$row->street2 ?>
-                        </p>
-
                     </div>
                 </div>
 
                 <div class="span-9">
-                    <div class="span-4 colborder">
+                    <div class="span-8 last">
                         <p>
-                            <?=$row->city?>
+                            <?=$row->city?>, <?=$row->state?> <?=$row->zip ?>
                         </p>
-
-                    </div>
-                    <div class="span-4 last">
-                        <p>
-                            <?=$row->state?>
-                        </p>
-
                     </div>
                 </div>
 
                 <div class="span-9">
-                    <div class="span-4 colborder">
-
+                    <div class="span-8 last">
                         <p>
-                            <?=$row->zip ?>
+                            Tel: <?=$row->phonenumber ?>
                         </p>
-
                     </div>
-                    <div class="span-4 last">
+                </div>
 
+                <div class="span-9">
+                    <div class="span-8 last">
                         <p>
-                            <?=$row->phonenumber ?>
+                            Customer Created: <?=$row->created ?>
                         </p>
-
                     </div>
                 </div>
 
             </div>
 
-            <div class="span-8 last">
+            <div id="GoogleMap" class="span-10 last">
                 <?php echo $onload; ?>
                 <?php echo $map; ?>
                 <?php echo $sidebar; ?>
             </div>
+
+            <div class="span-23 clear">
+
+                    <h2>Add Comments</h2>
+
+                <div class="span-16">
+
+                <?php
+                    $attributes = array(
+                        'userid' => $user_id,
+                        'goback' => '/admin/customerview/'. $custid,
+                        'custid' => $custid,
+                    );
+                ?>
+
+                    <?=form_open_multipart('/admin/updateComment', '', $attributes); ?>
+                    <textarea name="comment" rows="5" cols="45"></textarea>
+
+                    <P>Select one or more comment types:</P>
+                       <?php echo form_dropdown('commenttype', $select_options); ?>
+
+                     <?php
+                        $btn_submit = array(
+                            'type' => 'image',
+                            'src' => base_url() . '/assets/images/icons/48x48/accept.png',
+                            'name' => 'image',
+                            'width' => '48',
+                            'height' => '48',
+                            'value' => 'submit'
+            				);
+				        echo form_input($btn_submit);
+        			?>
+
+                       <?=form_fieldset_close(); ?>
+
+                       <?=form_close(); ?>
+
+
+
+                </div>
+                    <div class="span-6">
+
+
+                    </div>
+
+
+                </div>
 
         </div>
 
@@ -100,9 +124,32 @@
 
     <?php else : ?>
 
-        <p>No Businesses Here!</p>
+        <p class="notice">No Businesses Here!</p>
 
         <?php endif; ?>
+
+        <div id="Comments" class="span-23">
+            <h2>Customer Comments</h2>
+            
+            
+            <?php if($comments->num_rows() > 0) : foreach ($comments->result() as $row): ?>
+            <div class="span-18 comment">
+                <div class="buttons span-3 colborder">
+                    <img src="<?=$row->img?>"><br/>
+                    <p>Comment Created:<br/> <?=$row->created?></p>
+                </div>
+                <div id="Comment" class="span-10 last">
+                    <?=$row->comment?>
+                </div>
+
+            </div>
+
+        <?php endforeach; ?>
+
+        <?php else : ?>
+            <div class="span-17"><p class="notice">No Messages</p> </div>
+        <?php endif; ?>
+        </div>
 
 </div>
 <!-- End Edit Customer -->
