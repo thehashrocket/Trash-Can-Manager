@@ -25,6 +25,7 @@
             <th>City</th>
             <th>Phone Number</th>
             <th>Edit</th>
+            <th>Invoice</th>
             <th>Trash Cans</th>
             <th>Archive</th>
         </tr>
@@ -49,6 +50,10 @@
 
             <td>
                 <a href="/admin/custedit/<?=$row->custid ?>"><img alt="Edit Customer" src="/assets/images/icons/32x32/business_user_edit.png"></a>
+            </td>
+
+            <td>
+                <a href="/admin/createinvoice/<?=$row->custid ?>"><img alt="Create Invoice" src="/assets/images/icons/32x32/dollar_currency_sign.png"></a>
             </td>
 
             <td>

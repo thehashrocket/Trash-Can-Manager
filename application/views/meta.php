@@ -43,6 +43,8 @@
 
 <!--End Lightbox Code-->
 
+        <script type="text/javascript" src="/assets/js/modernizr-1.7.min.js"></script>
+
 <script type="text/javascript" src="/assets/js/jquery.tablesorter.min.js"></script>
 <script type="text/javascript" src="/assets/js/jquery.tablesorter.pager.js"></script>
 

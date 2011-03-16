@@ -1,4 +1,11 @@
 <?php
+/**
+ * The Gallery Model handles Images. It is not currently being used.
+ * Created by JetBrains PhpStorm.
+ * User: Jason Shultz
+ * Date: 2/11/11
+ * Time: 12:52 PM
+ */
 
 class Gallery_model extends CI_Model {
 	

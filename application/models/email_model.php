@@ -1,4 +1,11 @@
 <?php
+/**
+ * Simple Email Model
+ * Created by JetBrains PhpStorm.
+ * User: Jason Shultz
+ * Date: 2/11/11
+ * Time: 12:52 PM
+ */
 
 class Email_model extends CI_Model {
 

@@ -1,5 +1,6 @@
 <?php
 /**
+ * This is the Client Model which are our Customers. The Customers Model handles the Clients Customers.
  * Created by JetBrains PhpStorm.
  * User: Jason Shultz
  * Date: 2/11/11
@@ -83,6 +84,19 @@ class Client_model extends CI_Model {
         $this->db->where('userid', $userid);
         $this->db->where('is_archived',0);
         return $this->db->get();
+    }
+
+    function getTrashCanDropDown() {
+        $userid = $this->tank_auth->get_user_id();
+        $this->db->select('idtrashcans, cantype, userid, is_archived');
+        $this->db->from('trashcans');
+        $this->db->where('userid', $userid);
+        $this->db->where('is_archived',0);
+        $query = $this->db->get();
+        foreach($query->result_array() as $row){
+            $trashcan[$row['idtrashcans']]=$row['cantype'];
+        }
+        return $trashcan;
     }
 
     function archiveTrashCan($user_id, $idtrashcans, $goback) {

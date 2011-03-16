@@ -63,6 +63,33 @@ class Admin extends CI_Controller
 		}
 	}
 
+    function createinvoice($id)
+	{
+		if (!$this->tank_auth->is_logged_in()) {
+			redirect('/auth/login/');
+		} else {
+            $this->gmap->GoogleMapAPI();
+            // valid types are hybrid, satellite, terrain, map
+            $this->gmap->setMapType('map');
+            // you can also addMarkerByCoords($long,$lat)
+            // both marker methods also support $html, $tooltip, $icon_file and $icon_shadow_filename
+            $data['headerjs'] = $this->gmap->getHeaderJS();
+            $data['headermap'] = $this->gmap->getMapJS();
+			$this->load->model('Customer_model');
+            $this->load->model('Invoice_model');
+            $this->load->model('Client_model');
+            $data['trashcan_select'] = $this->Client_model->getTrashCanDropDown();
+            $data['customer'] = $this->Customer_model->getCustomerbyId($id);
+			$data['user_id']	= $this->tank_auth->get_user_id();
+            $data['custid']     = $id;
+			$data['username']	= $this->tank_auth->get_username();
+            $data['headerjs'] = $this->gmap->getHeaderJS();
+            $data['headermap'] = $this->gmap->getMapJS();
+            $data['page_title'] = 'Trash Can Manager - Control Panel';
+		  $data['page'] = '/admin/admin_createinvoice'; // pass the actual view to use as a parameter
+		  $this->load->view('container-admin',$data);
+		}
+	}
     function customerview($id)
 	{
 		if (!$this->tank_auth->is_logged_in()) {

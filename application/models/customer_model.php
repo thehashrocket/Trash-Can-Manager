@@ -1,5 +1,11 @@
 <?php
-
+/**
+ * This is the Customers Model which are Customers of Clients
+ * Created by JetBrains PhpStorm.
+ * User: Jason Shultz
+ * Date: 2/11/11
+ * Time: 12:52 PM
+ */
         class Customer_model extends CI_Model {
 
             function getCustomers() {
@@ -12,6 +18,13 @@
                 $this->db->join('custphone as p', 'p.custid = n.custid', 'left');
                 $this->db->join('custtrashcans as t', 't.custid = n.custid', 'left');
                 $this->db->group_by('n.custid');
+                return $this->db->get();
+            }
+
+            function getCustomerbyId($id) {
+                $this->db->select('firstname, lastname');
+                $this->db->from('custname');
+                $this->db->where('custid', $id);
                 return $this->db->get();
             }
 
