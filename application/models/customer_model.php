@@ -22,10 +22,11 @@
             }
 
             function getCustomerbyId($id) {
-                $this->db->select('firstname, lastname');
+                $this->db->select('custid, firstname, lastname');
                 $this->db->from('custname');
                 $this->db->where('custid', $id);
-                return $this->db->get();
+                $query = $this->db->get();
+                return $query->result();
             }
 
             function getAddress($id) {

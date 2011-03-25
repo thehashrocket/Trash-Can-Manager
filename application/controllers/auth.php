@@ -89,7 +89,11 @@ class Auth extends CI_Controller
 					$data['captcha_html'] = $this->_create_captcha();
 				}
 			}
-			$this->load->view('auth/login_form', $data);
+            $data['page_title'] = 'Welcome to Trash Can Manager';
+            $data['headerjs'] = $this->gmap->getHeaderJS();
+            $data['headermap'] = $this->gmap->getMapJS();
+            $data['page'] = 'auth/login_form';
+            $this->load->view('container-welcome',$data);
 		}
 	}
 
@@ -188,7 +192,12 @@ class Auth extends CI_Controller
 			$data['use_username'] = $use_username;
 			$data['captcha_registration'] = $captcha_registration;
 			$data['use_recaptcha'] = $use_recaptcha;
-			$this->load->view('auth/register_form', $data);
+
+            $data['page_title'] = 'Welcome to Trash Can Manager';
+            $data['headerjs'] = $this->gmap->getHeaderJS();
+            $data['headermap'] = $this->gmap->getMapJS();
+            $data['page'] = 'auth/register_form';
+            $this->load->view('container-welcome',$data);
 		}
 	}
 
@@ -223,7 +232,12 @@ class Auth extends CI_Controller
 					foreach ($errors as $k => $v)	$data['errors'][$k] = $this->lang->line($v);
 				}
 			}
-			$this->load->view('auth/send_again_form', $data);
+
+            $data['page_title'] = 'Welcome to Trash Can Manager';
+            $data['headerjs'] = $this->gmap->getHeaderJS();
+            $data['headermap'] = $this->gmap->getMapJS();
+            $data['page'] = 'auth/send_again_form';
+            $this->load->view('container-welcome',$data);
 		}
 	}
 
@@ -284,7 +298,13 @@ class Auth extends CI_Controller
 					foreach ($errors as $k => $v)	$data['errors'][$k] = $this->lang->line($v);
 				}
 			}
-			$this->load->view('auth/forgot_password_form', $data);
+
+
+            $data['page_title'] = 'Welcome to Trash Can Manager';
+            $data['headerjs'] = $this->gmap->getHeaderJS();
+            $data['headermap'] = $this->gmap->getMapJS();
+            $data['page'] = 'auth/forgot_password_form';
+            $this->load->view('container-welcome',$data);
 		}
 	}
 
@@ -333,7 +353,11 @@ class Auth extends CI_Controller
 				return;
 			}
 		}
-		$this->load->view('auth/reset_password_form', $data);
+            $data['page_title'] = 'Welcome to Trash Can Manager';
+            $data['headerjs'] = $this->gmap->getHeaderJS();
+            $data['headermap'] = $this->gmap->getMapJS();
+            $data['page'] = 'auth/reset_password_form';
+            $this->load->view('container-welcome',$data);
 	}
 
 	/**
@@ -365,7 +389,11 @@ class Auth extends CI_Controller
 					foreach ($errors as $k => $v)	$data['errors'][$k] = $this->lang->line($v);
 				}
 			}
-			$this->load->view('auth/change_password_form', $data);
+            $data['page_title'] = 'Welcome to Trash Can Manager';
+            $data['headerjs'] = $this->gmap->getHeaderJS();
+            $data['headermap'] = $this->gmap->getMapJS();
+            $data['page'] = 'auth/change_password_form';
+            $this->load->view('container-welcome',$data);
 		}
 	}
 
@@ -403,7 +431,11 @@ class Auth extends CI_Controller
 					foreach ($errors as $k => $v)	$data['errors'][$k] = $this->lang->line($v);
 				}
 			}
-			$this->load->view('auth/change_email_form', $data);
+            $data['page_title'] = 'Welcome to Trash Can Manager';
+            $data['headerjs'] = $this->gmap->getHeaderJS();
+            $data['headermap'] = $this->gmap->getMapJS();
+            $data['page'] = 'auth/change_email_form';
+            $this->load->view('container-welcome',$data);
 		}
 	}
 
@@ -455,7 +487,11 @@ class Auth extends CI_Controller
 					foreach ($errors as $k => $v)	$data['errors'][$k] = $this->lang->line($v);
 				}
 			}
-			$this->load->view('auth/unregister_form', $data);
+            $data['page_title'] = 'Welcome to Trash Can Manager';
+            $data['headerjs'] = $this->gmap->getHeaderJS();
+            $data['headermap'] = $this->gmap->getMapJS();
+            $data['page'] = 'auth/unregister_form';
+            $this->load->view('container-welcome',$data);
 		}
 	}
 

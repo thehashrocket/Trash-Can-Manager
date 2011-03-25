@@ -12,11 +12,13 @@ class Site extends CI_Controller {
 	{
         if (!$this->tank_auth->is_logged_in()) {
 			$data['loggedin'] = FALSE;
+            
 		} else {
             $data['loggedin'] = TRUE;
+
         }
-        $data['headerjs'] = $this->gmap->getHeaderJS();
-        $data['headermap'] = $this->gmap->getMapJS();
+        $data['headerjs'] = NULL;
+        $data['headermap'] = NULL;
         $this->load->model('News_model');
 		$data['news']	= $this->News_model->getNewsList();
 		$data['page_title'] = 'Welcome to Trash Can Manager';
@@ -26,8 +28,8 @@ class Site extends CI_Controller {
 	
 	function about()
 	{
-		$data['headerjs'] = $this->gmap->getHeaderJS();
-        $data['headermap'] = $this->gmap->getMapJS();
+		$data['headerjs'] = NULL;
+        $data['headermap'] = NULL;
         $data['page_title'] = 'Trash Can Manager: About Us';
 		$data['page'] = 'about_view'; // pass the actual view to use as a parameter
 		$this->load->view('container',$data);
@@ -36,8 +38,8 @@ class Site extends CI_Controller {
 	
 	function getstarted()
 	{
-        $data['headerjs'] = $this->gmap->getHeaderJS();
-        $data['headermap'] = $this->gmap->getMapJS();
+        $data['headerjs'] = NULL;
+        $data['headermap'] = NULL;
         $data['page_title'] = 'Trash Can Manager: Getting Started';
         $data['page'] = 'getstarted_view'; // pass the actual view to use as a parameter
         $this->load->view('container',$data);

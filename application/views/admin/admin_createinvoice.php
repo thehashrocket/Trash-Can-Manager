@@ -14,17 +14,38 @@
 
 
 
-    <div id="InvoiceCustomer" class="span-22">
+    <div id="InvoiceCustomer" class="span-22 clear">
+        <?php
 
-        <?php echo form_open_multipart('admin/invoices/create', 'id="create-invoice"'); ?>
+            $attributes = array(
+                'userid' => $user_id,
+                'custid' => $customer[0]->custid,
+                'goback' => '/admin/index'
+            );
+
+        ?>
+
+		<?=form_open_multipart('/admin/makeInvoice', '', $attributes); ?>
 		<fieldset>
 
-        <div class="span-22">
+        <div class="span-22 row clear">
             <div class="span-5"><?php echo form_label('Invoice Number'); ?></div>
-            <div class="span-16 last"><?php echo form_input('invoice_number', set_value('invoice_number'), 'id="invoice_number" class="txt"'); ?><br/>&nbsp;<em><strong>Optional</strong> - will auto increment</em></div>
+            <div class="span-10"><?php echo form_input('invoice_number', set_value('invoice_number'), 'id="invoice_number" class="txt"'); ?><em><strong>Optional</strong> - will auto increment</em></div>
+
+            <div class="paid-check hide-estimate span-6 last">
+					<label for="is_paid">Mark As Paid</label>
+					<?php
+					echo form_checkbox(array(
+						'name' => 'is_paid',
+						'id' => 'is_paid',
+						'checked' => (!set_value('is_paid', FALSE)) ? FALSE : TRUE,
+						'value' => '1',
+					)); ?>
+				</div>
+
         </div>
 
-        <div class="span-22 row hide-estimate">
+        <div class="span-22 clear row">
 				<div class="span-5"><?php echo form_label('Recurring?'); ?></div>
 				<div class="span-16 last"><div class="sel-item">
 					<?php echo form_dropdown('is_recurring', array('No', 'Yes'), set_value('is_recurring'), 'id="is_recurring"'); ?>
@@ -33,7 +54,7 @@
 
         <div id="recurring-options" style="display:none">
 
-				<div class="row span-22">
+				<div class="row span-22 clear">
 					<div class="span-5"><?php echo form_label('Frequency'); ?></div>
 					<div class="span-16 last"><div class="sel-item">
 						<?php echo form_dropdown('frequency', array('w' => 'Week', 'm' => 'Month', 'y' => 'Year'), set_value('frequency', 'm'), 'id="frequency"'); ?>
@@ -41,23 +62,21 @@
 				</div>
 
 				<div class="row span-22">
-					<div class="span-5"><?php echo form_label('Invoice Number'); ?></div>
+					<div class="span-5"><?php echo form_label('Auto Send'); ?></div>
 					<div class="span-16 last"><div class="sel-item">
 						<?php echo form_dropdown('auto_send', array('No', 'Yes'), set_value('auto_send', 1), 'id="auto_send"'); ?>
 					</div></div>
 				</div>
         </div>
 
-        <div class="span-22 row">
+        <div class="span-22 clear row">
             <div class="span-5"><?php echo form_label('Customer'); ?></div>
-            <div class="span-16 last"><?php foreach ($customer->result_array() as $row) {
-            echo $row['firstname'] . ' ' . $row['lastname'];
-        };?></div>
+            <div class="span-16 last"><?php foreach ($customer as $row) : ;?><p><?=$row->firstname?> <?=$row->lastname?></p><?php endforeach; ?></div>
 				
 			</div><!-- /row end -->
 
 
-			<div class="span-22 row">
+			<div class="span-22 clear row">
 				<div class="span-5"><label for="description">Description</label></div>
 				<div class="span-16 last"><?php
 					echo form_textarea(array(
@@ -70,59 +89,39 @@
 				?></div>
 			</div><!-- /row end -->
 
-        <div id="DETAILED-wrapper" class="span-22 type-wrapper row">
+        <div id="DETAILED-wrapper" class="span-22 clear type-wrapper row">
 					<div class="span-5"><label for="nothing">Line Items</label></div>
-					<div class="span-16 last"><table class="pc-table" id="invoice-items" style="width: 702px">
+					<div class="span-16 last"><table class="pc-table" id="invoice-items">
 						<thead>
 							<tr>
-								<th>Item Description</th>
-								<th>Qty / Hrs</th>
-								<th>Rate</th>
-								<th>Cost</th>
-								<?php if ( ! empty($items)): ?><th>Actions</th><?php endif; ?>
+								<th>Trash Can Type</th>
+								<th>Qty</th>
+								<th>Actions</th>
 							</tr>
 						</thead>
 						<tbody>
-						<?php if ( ! empty($items)): ?>
-						<?php foreach ($items as $item): ?>
-							<tr>
-								<td><input type="text" name="invoice_item[description][]" class="item_description txt small" style="width: 150px" value="<?php echo $item['description']; ?>" /></td>
-								<td><input type="text" name="invoice_item[quantity][]" value="<?php echo $item['quantity']; ?>" class="item_quantity txt small" style="width: 40px" /></td>
-								<td><input type="text" name="invoice_item[rate][]"  value="<?php echo $item['rate']; ?>" class="item_rate txt small" style="width: 60px" /></td>
 
-								<td>
-									<input type="hidden" name="invoice_item[cost][]" value="<?php echo number_format($item['cost'], 2); ?>" class="item_cost" />
-									<span class="item_cost"><?php echo number_format($item['cost'], 2); ?></span>
-								</td>
-								<td class="actions">
-									<a href="#" class="remove_item" style="margin:0;">Remove</a>
-								</td>
-							</tr>
-						<?php endforeach; ?>
-						<?php else: ?>
 							<tr>
-								<td><?php echo form_dropdown('trashcan', $trashcan_select); ?></td>
+								<td><?php echo form_dropdown('invoice_item[trashcan][]', $trashcan_select); ?></td>
 								<td><input type="text" name="invoice_item[quantity][]" value="1" class="item_quantity txt small" style="width: 40px" /></td>
-								<td><input type="text" name="invoice_item[rate][]"  value="1.00" class="item_rate txt small" style="width: 60px" /></td>
-								<td style="width: 100px">
-									<input type="hidden" name="invoice_item[cost][]" value="1.00" class="item_cost" />
-									<span class="item_cost">1.00</span>
+                                <td class="actions">
+									<a href="#" class="remove_item" style="margin:0;"><img src="/assets/images/icons/32x32/remove.png"></a>
 								</td>
 							</tr>
-						<?php endif; ?>
+
 
 						</tbody>
 					</table></div>
 
-					<div class="span-22 btns-holder" style="margin-left: 160px">
+					<div class="span-22 clear btns-holder" style="margin-left: 160px">
 						<ul class="btns-list">
-							<li><a class="yellow-btn" href="#" id="add-row"><span>Add Item</span></a></li>
+							<li><a href="#" id="add-row"><span><img src="/assets/images/icons/32x32/add.png"></span></a></li>
 						</ul><!-- /btns-list end -->
 					</div><!-- /btns-holder end -->
 				</div><!-- /row end -->
 				<div class="row">
-					<label for="lb08">Notes</label>
-					<div class="textarea">
+					<div class="span-5"><label for="lb08">Notes</label></div>
+					<div class="span-16 last"><div class="textarea">
 						<?php
 							echo form_textarea(array(
 								'name' => 'notes',
@@ -132,19 +131,24 @@
 								'cols' => 50
 							));
 						?>
-					</div>
+					</div></div>
 				</div><!-- /row end -->
+            <div class="row span-22 clear">
+                <?php
+			$btn_submit = array(
+				'type' => 'image',
+				'src' => base_url() . '/assets/images/icons/48x48/accept.png',
+				'name' => 'image',
+				'width' => '48',
+				'height' => '48',
+				'value' => 'submit'
+				);
 
-        <div id="SIMPLE-wrapper" class="span-22 type-wrapper row">
-					<label for="amount">Amount $</label>
-					<?php echo form_input('amount', set_value('amount'), 'class="txt"'); ?>
-				</div><!-- /row end -->
-				<div class="row">
-					<label for="nothing">&nbsp;</label>
-					<a href="#" class="yellow-btn" onclick="$"><span>&rarr;</span></a>
+				echo form_input($btn_submit);
+			?>
 				</div>
 
-            </fieldset>
+             </fieldset>
 		<?php echo form_close(); ?>
 
     </div>

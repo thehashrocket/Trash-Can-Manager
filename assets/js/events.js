@@ -20,6 +20,23 @@ $(document).ready(function() {
 		return false;
 	});
 
+    // Remove (or at least hide) a row
+	$('.remove_item').live('click', function(){
+
+		// Last one, keep it!
+		if( $('#invoice-items tbody').children('tr').length == 1)
+		{
+			$(this).closest('tr').hide().find('input').val('');
+		}
+
+		// Remove if there are others to clone
+		else
+		{
+			$(this).closest('tr').remove();
+		}
+		return false;
+	});
+
     // Is Recurring?
 
     $('select[name=is_recurring]').change(function() {

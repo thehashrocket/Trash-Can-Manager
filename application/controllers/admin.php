@@ -17,8 +17,8 @@ class Admin extends CI_Controller
 		} else {
             $this->load->model('Customer_model');
             $this->load->model('Invoice_model');
-            $data['headerjs'] = $this->gmap->getHeaderJS();
-            $data['headermap'] = $this->gmap->getMapJS();
+            $data['headerjs'] = NULL;
+            $data['headermap'] = NULL;
             $data['customers'] = $this->Customer_model->getCustomers();
             $data['pastdue'] = $this->Invoice_model->get_all_overdue();
 			$data['user_id']	= $this->tank_auth->get_user_id();
@@ -73,8 +73,8 @@ class Admin extends CI_Controller
             $this->gmap->setMapType('map');
             // you can also addMarkerByCoords($long,$lat)
             // both marker methods also support $html, $tooltip, $icon_file and $icon_shadow_filename
-            $data['headerjs'] = $this->gmap->getHeaderJS();
-            $data['headermap'] = $this->gmap->getMapJS();
+            $data['headerjs'] = NULL;
+            $data['headermap'] = NULL;
 			$this->load->model('Customer_model');
             $this->load->model('Invoice_model');
             $this->load->model('Client_model');
@@ -90,6 +90,49 @@ class Admin extends CI_Controller
 		  $this->load->view('container-admin',$data);
 		}
 	}
+
+    function makeInvoice()
+    {
+        $this->load->library('form_validation');
+        $this->load->model('Client_model');
+        $this->load->model('Customer_model');
+        $this->load->model('Invoice_model');
+
+        $this->form_validation->set_rules('userid', 'User Id', 'trim');
+
+        if($this->form_validation->run() == FALSE)
+        {
+
+        }
+
+        else
+        {
+            $userid = (string)$this->input->post('userid', TRUE);
+            $custid = (string)$this->input->post('custid', TRUE);
+            $invoicenumber = (string)$this->input->post('invoice_number', TRUE);
+            $notes = (string)$this->input->post('notes', TRUE);
+            $ispaid = (string)$this->input->post('is_paid', TRUE);
+            $is_recurring = (string)$this->input->post('is_recurring', TRUE);
+            $frequency = (string)$this->input->post('frequency', TRUE);
+            $autosend = (string)$this->input->post('auto_send', TRUE);
+            $description = (string)$this->input->post('description', TRUE);
+            $goback = (string)$this->input->post('goback', TRUE);
+
+            if ( ! isset($invoicenumber) OR empty($invoicenumber))
+		{
+			$input['invoice_number'] = $this->Invoice_model->_generate_invoice_number();
+		}
+
+		    $unique_id = $this->Invoice_model->_generate_unique_id();
+
+            $invoice_items = $this->input->post('invoice_item');
+
+            //var_dump($invoice_items);
+
+            $this->Invoice_model->insertInvoice($userid, $custid, $invoicenumber, $invoice_items, $notes, $ispaid, $is_recurring, $frequency, $autosend, $description, $unique_id, $goback);
+
+        }
+    }
     function customerview($id)
 	{
 		if (!$this->tank_auth->is_logged_in()) {
@@ -139,8 +182,8 @@ class Admin extends CI_Controller
         if (!$this->tank_auth->is_logged_in()) {
             redirect('/auth/login');
         } else {
-            $data['headerjs'] = $this->gmap->getHeaderJS();
-            $data['headermap'] = $this->gmap->getMapJS();
+            $data['headerjs'] = NULL;
+            $data['headermap'] = NULL;
             $data['user_id']	= $this->tank_auth->get_user_id();
 			$data['username']	= $this->tank_auth->get_username();
             $this->load->model('Client_model');
@@ -204,7 +247,8 @@ class Admin extends CI_Controller
 		}
 	}
 
-    function updateClient() {
+    function updateClient()
+    {
         $this->load->library('form_validation');
         $this->load->model('Client_model');
 
@@ -218,8 +262,8 @@ class Admin extends CI_Controller
 
         if($this->form_validation->run() == FALSE)
         {
-            $data['headerjs'] = $this->gmap->getHeaderJS();
-            $data['headermap'] = $this->gmap->getMapJS();
+            $data['headerjs'] = NULL;
+            $data['headermap'] = NULL;
             $data['user_id']	= $this->tank_auth->get_user_id();
 			$data['username']	= $this->tank_auth->get_username();
             $this->load->model('Client_model');
@@ -286,7 +330,8 @@ class Admin extends CI_Controller
 
     }
 
-    function updateTrashCan() {
+    function updateTrashCan()
+    {
         $this->load->library('form_validation');
         $this->load->model('Client_model');
 
@@ -300,8 +345,8 @@ class Admin extends CI_Controller
 
         if($this->form_validation->run() == FALSE)
         {
-            $data['headerjs'] = $this->gmap->getHeaderJS();
-            $data['headermap'] = $this->gmap->getMapJS();
+            $data['headerjs'] = NULL;
+            $data['headermap'] = NULL;
             $data['user_id']	= $this->tank_auth->get_user_id();
 			$data['username']	= $this->tank_auth->get_username();
             $this->load->model('Client_model');
@@ -343,33 +388,6 @@ class Admin extends CI_Controller
 
         $this->Client_model->archiveTrashCan($user_id, $idtrashcans, $goback);
 	}
-	
-    function test()
-    {
-        if (!$this->tank_auth->is_logged_in()) {
-        redirect('/auth/login/');
-    }
-        else {
-            $this->gmap->GoogleMapAPI();
-            // valid types are hybrid, satellite, terrain, map
-            $this->gmap->setMapType('map');
-            // you can also addMarkerByCoords($long,$lat)
-            // both marker methods also support $html, $tooltip, $icon_file and $icon_shadow_filename
-            $this->gmap->addMarkerByAddress("106 E Aspen ST, Cottonwood, AZ, US", "Marker Title", "Marker Description");
-            $this->gmap->addDirections("42 Beanland Gardens, Wibsey, Bradford, UK", "57 Cardigan Lane, Leeds, UK", 'map_directions', $display_markers=true);
-			$data['user_id']	= $this->tank_auth->get_user_id();
-			$data['username']	= $this->tank_auth->get_username();
-            $data['headerjs'] = $this->gmap->getHeaderJS();
-            $data['headermap'] = $this->gmap->getMapJS();
-            $data['onload'] = $this->gmap->printOnLoad();
-            $data['directions'] = $this->gmap->addDirections();
-            $data['map'] = $this->gmap->printMap();
-            $data['sidebar'] = $this->gmap->printSidebar();
-            $data['page_title'] = 'Trash Can Manager - Control Panel';
-            $data['page'] = '/admin/admin_test'; // pass the actual view to use as a parameter
-            $this->load->view('container-admin',$data);
-    }
-    }
 }
 
 /* End of file welcome.php */

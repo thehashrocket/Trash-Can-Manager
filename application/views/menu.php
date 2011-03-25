@@ -576,6 +576,8 @@
         <li class="right"><a href="/auth/logout">Log Out</a><!-- Begin sixth Item -->
         <?php else : ?>
 
+            
+
             <li class="right"><a href="/auth/login">Log In</a>
 
         <?php endif; ?>
