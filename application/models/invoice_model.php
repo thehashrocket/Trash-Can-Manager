@@ -131,6 +131,12 @@ class Invoice_model extends CI_Model
                 'userid'        =>  $userid,
                 'custid'        =>  $custid,
             );
+
+            $items_array2[] = array(
+                'unique_id'     => $unique_id,
+                'description'   => $this->Client_model->getTrashCanName($trashcan),
+                'qty'           => $qty,
+            );
             
         }
 
@@ -139,6 +145,13 @@ class Invoice_model extends CI_Model
         foreach ($items as $item)
         {
             $this->db->insert('custtrashcans', $item);
+        }
+
+        $items2 = $items_array2;
+
+        foreach ($items2 as $item)
+        {
+            $this->db->insert('invoice_rows', $item);
         }
         
     }
