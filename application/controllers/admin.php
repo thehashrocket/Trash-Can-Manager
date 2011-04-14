@@ -22,8 +22,6 @@ class Admin extends CI_Controller
 
 	}
 
-
-
 	function index()
 
 	{
@@ -59,8 +57,6 @@ class Admin extends CI_Controller
 		}
 
 	}
-
-
 
     function custedit($id)
 
@@ -128,8 +124,6 @@ class Admin extends CI_Controller
 
 	}
 
-
-
     function createinvoice($id)
 
 	{
@@ -179,8 +173,6 @@ class Admin extends CI_Controller
 		}
 
 	}
-
-
 
     function makeInvoice()
 
@@ -355,6 +347,7 @@ class Admin extends CI_Controller
 	}
 
     function receivepayment($id)
+
     {
         if (!$this->tank_auth->is_logged_in()) {
 
@@ -380,9 +373,11 @@ class Admin extends CI_Controller
 
             $data['custid']     = $id;
 
+            $data['invoice']    = $this->Customer_model->getInvoicesById($id);
+
 			$data['username']	= $this->tank_auth->get_username();
 
-            $data['page_title'] = 'Trash Can Manager - Control Panel';
+            $data['page_title'] = 'Trash Can Manager - Receive Payments';
 
             $data['page'] = '/admin/admin_receivepayment'; // pass the actual view to use as a parameter
 
@@ -391,8 +386,6 @@ class Admin extends CI_Controller
         }
 
     }
-
-
 
     function settings()
 
@@ -427,8 +420,6 @@ class Admin extends CI_Controller
         }
 
     }
-
-
 
     function updateCustomer()
 
@@ -532,8 +523,6 @@ class Admin extends CI_Controller
 
 	}
 
-
-
     function updateClient()
 
     {
@@ -611,8 +600,6 @@ class Admin extends CI_Controller
         }
 
     }
-
-
 
     function updateComment()
 
@@ -698,8 +685,6 @@ class Admin extends CI_Controller
 
     }
 
-
-
     function updateTrashCan()
 
     {
@@ -776,8 +761,6 @@ class Admin extends CI_Controller
 
     }
 
-
-
     function archiveCustomer($id)
 
 	{
@@ -795,8 +778,6 @@ class Admin extends CI_Controller
         $this->Customer_model->archiveCust($user_id, $custid, $goback);
 
 	}
-
-
 
     function archiveTrashCan($id, $tid)
 

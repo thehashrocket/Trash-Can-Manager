@@ -188,6 +188,14 @@
 
             }
 
+            function getInvoicesByID($id)
+            {
+                $this->db->select('*')
+                    ->from('invoices')
+                    ->where('custid', $id);
+                return $this->db->get();
+            }
+
 
 
             function archiveCust($user_id, $custid, $goback)
