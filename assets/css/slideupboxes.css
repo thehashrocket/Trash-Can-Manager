@@ -47,6 +47,6 @@
 			-moz-transform: rotate(0); 
 			-o-transform: rotate(0); 
 		}
-		.slide-up-boxes a:nth-child(1) div { background: #c73b1b url(/assets/images/icons/48x48/Question-Mark-Icon.png) 17px 16px no-repeat; padding-left: 120px; }
-		.slide-up-boxes a:nth-child(2) div { background: #367db2 url(/assets/images/icons/48x48/Question-Mark-Icon.png) 21px 16px no-repeat; padding-left: 90px; }
-		.slide-up-boxes a:nth-child(3) div { background: #393838 url(/assets/images/icons/48x48/Question-Mark-Icon.png) 14px 16px no-repeat; padding-left: 133px; }
+		.slide-up-boxes a:nth-child(1) div { background: #c73b1b url(/assets/images/icons/Question-Mark-Icon.png) 17px 16px no-repeat; padding-left: 120px; }
+		.slide-up-boxes a:nth-child(2) div { background: #367db2 url(/assets/images/icons/Question-Mark-Icon.png) 21px 16px no-repeat; padding-left: 90px; }
+		.slide-up-boxes a:nth-child(3) div { background: #393838 url(/assets/images/icons/Question-Mark-Icon.png) 14px 16px no-repeat; padding-left: 133px; }

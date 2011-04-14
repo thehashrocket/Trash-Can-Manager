@@ -2703,3 +2703,195 @@
 [19-Jan-2011 14:31:49] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo_sqlite.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo_sqlite.so: undefined symbol: sqlite3_libversion in Unknown on line 0
 [19-Jan-2011 19:08:04] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo_sqlite.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo_sqlite.so: undefined symbol: sqlite3_libversion in Unknown on line 0
 [19-Jan-2011 19:08:05] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo_sqlite.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20090626/pdo_sqlite.so: undefined symbol: sqlite3_libversion in Unknown on line 0
+[29-Jan-2011 18:26:12] PHP Fatal error:  Call to a member function getHeaderJS() on a non-object in /home/trashcan/public_html/application/controllers/site.php on line 14
+[29-Jan-2011 18:38:00] PHP Fatal error:  Call to a member function result() on a non-object in /home/trashcan/public_html/application/views/welcome_message.php on line 41
+[29-Jan-2011 18:40:15] PHP Fatal error:  Call to a member function num_rows() on a non-object in /home/trashcan/public_html/application/models/tank_auth/login_attempts.php on line 38
+[29-Jan-2011 18:49:52] PHP Fatal error:  Call to a member function result() on a non-object in /home/trashcan/public_html/application/views/welcome_message.php on line 41
+[29-Jan-2011 18:49:56] PHP Fatal error:  Call to a member function num_rows() on a non-object in /home/trashcan/public_html/application/models/tank_auth/login_attempts.php on line 38
+[29-Jan-2011 18:51:09] PHP Fatal error:  Call to a member function num_rows() on a non-object in /home/trashcan/public_html/application/models/tank_auth/login_attempts.php on line 38
+[29-Jan-2011 18:58:43] PHP Fatal error:  Call to a member function num_rows() on a non-object in /home/trashcan/public_html/application/models/tank_auth/login_attempts.php on line 38
+[29-Jan-2011 19:05:06] PHP Fatal error:  Call to a member function num_rows() on a non-object in /home/trashcan/public_html/application/models/tank_auth/login_attempts.php on line 38
+[29-Jan-2011 19:05:08] PHP Fatal error:  Call to a member function num_rows() on a non-object in /home/trashcan/public_html/application/models/tank_auth/login_attempts.php on line 38
+[29-Jan-2011 19:07:35] PHP Fatal error:  Call to a member function result() on a non-object in /home/trashcan/public_html/application/views/welcome_message.php on line 41
+[29-Jan-2011 19:59:20] PHP Fatal error:  Call to a member function result() on a non-object in /home/trashcan/public_html/application/views/welcome_message.php on line 41
+[29-Jan-2011 20:02:23] PHP Fatal error:  Call to a member function result() on a non-object in /home/trashcan/public_html/application/views/welcome_message.php on line 41
+[29-Jan-2011 20:02:36] PHP Fatal error:  Call to a member function num_rows() on a non-object in /home/trashcan/public_html/application/models/tank_auth/login_attempts.php on line 38
+[29-Jan-2011 20:12:34] PHP Fatal error:  Call to a member function num_rows() on a non-object in /home/trashcan/public_html/application/models/tank_auth/login_attempts.php on line 38
+[29-Jan-2011 20:15:54] PHP Fatal error:  Call to a member function num_rows() on a non-object in /home/trashcan/public_html/application/models/tank_auth/login_attempts.php on line 38
+[29-Jan-2011 20:15:59] PHP Fatal error:  Call to a member function result() on a non-object in /home/trashcan/public_html/application/views/welcome_message.php on line 41
+[29-Jan-2011 20:20:13] PHP Fatal error:  Call to a member function result() on a non-object in /home/trashcan/public_html/application/views/welcome_message.php on line 41
+[29-Jan-2011 20:20:18] PHP Fatal error:  Call to a member function result() on a non-object in /home/trashcan/public_html/application/views/welcome_message.php on line 41
+[29-Jan-2011 20:36:29] PHP Fatal error:  Call to a member function result() on a non-object in /home/trashcan/public_html/application/views/welcome_message.php on line 41
+[10-Feb-2011 18:19:33] PHP Fatal error:  Call to undefined function string() in /home/trashcan/public_html/application/controllers/admin.php on line 106
+[11-Feb-2011 15:02:36] PHP Fatal error:  Call to a member function row() on a non-object in /home/trashcan/public_html/application/models/client_model.php on line 27
+[11-Feb-2011 15:03:09] PHP Fatal error:  Call to a member function result() on a non-object in /home/trashcan/public_html/application/views/admin/admin_settings.php on line 26
+[11-Feb-2011 15:04:16] PHP Fatal error:  Call to undefined function form_fieldset_open() in /home/trashcan/public_html/application/views/admin/admin_settings.php on line 29
+[11-Feb-2011 15:19:41] PHP Parse error:  syntax error, unexpected T_ECHO in /home/trashcan/public_html/application/views/admin/admin_settings.php on line 36
+[11-Feb-2011 15:40:53] PHP Fatal error:  Cannot access empty property in /home/trashcan/public_html/application/views/admin/admin_settings.php on line 38
+[11-Feb-2011 17:09:59] PHP Fatal error:  Call to undefined method CI_DB_mysql_result::num_row() in /home/trashcan/public_html/application/models/client_model.php on line 39
+[14-Feb-2011 12:19:32] PHP Notice:  Use of undefined constant ENVIRONMENT - assumed 'ENVIRONMENT' in /home/trashcan/public_html/system/core/Common.php on line 211
+[14-Feb-2011 12:19:34] PHP Notice:  Use of undefined constant ENVIRONMENT - assumed 'ENVIRONMENT' in /home/trashcan/public_html/system/core/Common.php on line 211
+[14-Feb-2011 12:19:34] PHP Notice:  Use of undefined constant ENVIRONMENT - assumed 'ENVIRONMENT' in /home/trashcan/public_html/system/core/Common.php on line 211
+[14-Feb-2011 12:19:34] PHP Notice:  Use of undefined constant ENVIRONMENT - assumed 'ENVIRONMENT' in /home/trashcan/public_html/system/core/Common.php on line 211
+[14-Feb-2011 12:23:14] PHP Notice:  Use of undefined constant ENVIRONMENT - assumed 'ENVIRONMENT' in /home/trashcan/public_html/system/core/Common.php on line 211
+[14-Feb-2011 12:23:15] PHP Notice:  Use of undefined constant ENVIRONMENT - assumed 'ENVIRONMENT' in /home/trashcan/public_html/system/core/Common.php on line 211
+[14-Feb-2011 12:23:15] PHP Notice:  Use of undefined constant ENVIRONMENT - assumed 'ENVIRONMENT' in /home/trashcan/public_html/system/core/Common.php on line 211
+[14-Feb-2011 12:23:16] PHP Notice:  Use of undefined constant ENVIRONMENT - assumed 'ENVIRONMENT' in /home/trashcan/public_html/system/core/Common.php on line 211
+[14-Feb-2011 12:26:22] PHP Notice:  Use of undefined constant ENVIRONMENT - assumed 'ENVIRONMENT' in /home/trashcan/public_html/system/core/Common.php on line 211
+[14-Feb-2011 12:26:23] PHP Notice:  Use of undefined constant ENVIRONMENT - assumed 'ENVIRONMENT' in /home/trashcan/public_html/system/core/Common.php on line 211
+[14-Feb-2011 12:26:23] PHP Notice:  Use of undefined constant ENVIRONMENT - assumed 'ENVIRONMENT' in /home/trashcan/public_html/system/core/Common.php on line 211
+[14-Feb-2011 12:26:24] PHP Notice:  Use of undefined constant ENVIRONMENT - assumed 'ENVIRONMENT' in /home/trashcan/public_html/system/core/Common.php on line 211
+[16-Feb-2011 14:32:20] PHP Fatal error:  Call to undefined method Client_model::getTrashCans() in /home/trashcan/public_html/application/controllers/admin.php on line 79
+[16-Feb-2011 15:53:00] PHP Parse error:  syntax error, unexpected $end in /home/trashcan/public_html/application/views/admin/admin_settings.php on line 159
+[16-Feb-2011 15:56:26] PHP Fatal error:  Call to undefined method stdClass::result() in /home/trashcan/public_html/application/views/admin/admin_settings.php on line 117
+[16-Feb-2011 15:57:10] PHP Fatal error:  Call to undefined method stdClass::result() in /home/trashcan/public_html/application/views/admin/admin_settings.php on line 114
+[16-Feb-2011 18:00:51] PHP Fatal error:  Call to undefined method stdClass::result() in /home/trashcan/public_html/application/views/admin/admin_settings.php on line 155
+[16-Feb-2011 18:41:01] PHP Fatal error:  Call to a member function row() on a non-object in /home/trashcan/public_html/application/models/client_model.php on line 95
+[16-Feb-2011 18:41:22] PHP Fatal error:  Call to undefined method stdClass::row() in /home/trashcan/public_html/application/models/client_model.php on line 95
+[16-Feb-2011 18:52:11] PHP Fatal error:  Call to undefined method stdClass::result() in /home/trashcan/public_html/application/views/admin/admin_settings.php on line 147
+[16-Feb-2011 18:53:19] PHP Fatal error:  Call to undefined method stdClass::result() in /home/trashcan/public_html/application/views/admin/admin_settings.php on line 147
+[16-Feb-2011 19:16:29] PHP Parse error:  syntax error, unexpected '=' in /home/trashcan/public_html/application/models/client_model.php on line 84
+[16-Feb-2011 19:45:52] PHP Fatal error:  Call to a member function result() on a non-object in /home/trashcan/public_html/application/views/admin/admin_welcome.php on line 34
+[16-Feb-2011 20:26:24] PHP Fatal error:  Call to undefined method stdClass::num_rows() in /home/trashcan/public_html/application/views/admin/admin_settings.php on line 161
+[16-Feb-2011 20:27:42] PHP Fatal error:  Call to undefined method stdClass::num_rows() in /home/trashcan/public_html/application/views/admin/admin_settings.php on line 161
+[16-Feb-2011 20:33:53] PHP Fatal error:  Call to undefined method stdClass::num_rows() in /home/trashcan/public_html/application/views/admin/admin_settings.php on line 161
+[18-Feb-2011 17:02:03] PHP Fatal error:  Call to a member function is_logged_in() on a non-object in /home/trashcan/public_html/application/views/menu.php on line 78
+[18-Feb-2011 17:10:19] PHP Fatal error:  Call to a member function is_logged_in() on a non-object in /home/trashcan/public_html/application/controllers/site.php on line 13
+[24-Feb-2011 13:35:31] PHP Fatal error:  Call to undefined method Customer_model::archiveTrashCan() in /home/trashcan/public_html/application/controllers/admin.php on line 284
+[24-Feb-2011 13:36:02] PHP Fatal error:  Call to undefined method Customer_model::archiveTrashCan() in /home/trashcan/public_html/application/controllers/admin.php on line 284
+[03-Mar-2011 15:59:07] PHP Parse error:  syntax error, unexpected T_ENDIF in /home/trashcan/public_html/application/controllers/admin.php on line 89
+[03-Mar-2011 16:01:03] PHP Parse error:  syntax error, unexpected T_ELSE in /home/trashcan/public_html/application/controllers/admin.php on line 87
+[04-Mar-2011 15:44:31] PHP Fatal error:  Call to a member function num_rows() on a non-object in /home/trashcan/public_html/application/views/admin/admin_welcome.php on line 104
+[04-Mar-2011 16:36:34] PHP Fatal error:  Call to a member function num_rows() on a non-object in /home/trashcan/public_html/application/views/admin/admin_welcome.php on line 104
+[04-Mar-2011 23:06:31] PHP Fatal error:  Call to a member function num_rows() on a non-object in /home/trashcan/public_html/application/views/admin/admin_welcome.php on line 104
+[04-Mar-2011 23:08:34] PHP Fatal error:  Call to a member function num_rows() on a non-object in /home/trashcan/public_html/application/views/admin/admin_welcome.php on line 104
+[05-Mar-2011 01:23:32] PHP Fatal error:  Call to undefined method Customer_model::getComment() in /home/trashcan/public_html/application/controllers/admin.php on line 84
+[05-Mar-2011 01:26:29] PHP Fatal error:  Call to a member function num_rows() on a non-object in /home/trashcan/public_html/application/views/admin/admin_welcome.php on line 104
+[05-Mar-2011 01:26:52] PHP Fatal error:  Call to a member function num_rows() on a non-object in /home/trashcan/public_html/application/views/admin/admin_welcome.php on line 104
+[05-Mar-2011 12:07:07] PHP Fatal error:  Call to a member function num_rows() on a non-object in /home/trashcan/public_html/application/views/admin/admin_welcome.php on line 104
+[05-Mar-2011 12:17:38] PHP Fatal error:  Call to a member function num_rows() on a non-object in /home/trashcan/public_html/application/views/admin/admin_welcome.php on line 104
+[05-Mar-2011 13:46:14] PHP Fatal error:  Call to a member function num_rows() on a non-object in /home/trashcan/public_html/application/models/client_model.php on line 106
+[05-Mar-2011 13:51:39] PHP Fatal error:  Call to a member function num_rows() on a non-object in /home/trashcan/public_html/application/models/client_model.php on line 105
+[05-Mar-2011 13:56:13] PHP Fatal error:  Call to a member function num_rows() on a non-object in /home/trashcan/public_html/application/models/client_model.php on line 105
+[05-Mar-2011 13:58:06] PHP Fatal error:  Call to a member function num_rows() on a non-object in /home/trashcan/public_html/application/models/client_model.php on line 105
+[05-Mar-2011 13:58:35] PHP Fatal error:  Call to a member function num_rows() on a non-object in /home/trashcan/public_html/application/models/client_model.php on line 105
+[05-Mar-2011 14:17:16] PHP Fatal error:  Call to a member function result() on a non-object in /home/trashcan/public_html/application/views/admin/admin_settings.php on line 169
+[05-Mar-2011 14:18:46] PHP Fatal error:  Call to a member function num_rows() on a non-object in /home/trashcan/public_html/application/views/admin/admin_settings.php on line 169
+[05-Mar-2011 14:19:39] PHP Fatal error:  Call to a member function num_rows() on a non-object in /home/trashcan/public_html/application/views/admin/admin_settings.php on line 169
+[07-Mar-2011 18:33:31] PHP Fatal error:  Class 'Uagent' not found in /home/trashcan/public_html/application/views/test.php on line 40
+[07-Mar-2011 18:34:21] PHP Fatal error:  Class 'Uagent' not found in /home/trashcan/public_html/application/controllers/test.php on line 19
+[07-Mar-2011 18:41:23] PHP Fatal error:  Call to a member function get_user_agent() on a non-object in /home/trashcan/public_html/application/views/test.php on line 44
+[07-Mar-2011 18:43:54] PHP Fatal error:  Call to a member function get_user_agent() on a non-object in /home/trashcan/public_html/application/views/test.php on line 44
+[07-Mar-2011 18:44:33] PHP Fatal error:  Call to a member function get_user_agent() on a non-object in /home/trashcan/public_html/application/views/test.php on line 44
+[07-Mar-2011 18:44:36] PHP Fatal error:  Call to a member function get_user_agent() on a non-object in /home/trashcan/public_html/application/views/test.php on line 44
+[08-Mar-2011 15:47:35] PHP Fatal error:  Call to undefined method CI_Model::CI_Model() in /home/trashcan/public_html/application/models/master_model.php on line 34
+[08-Mar-2011 16:18:42] PHP Fatal error:  Call to undefined method CI_Model::CI_Model() in /home/trashcan/public_html/application/models/master_model.php on line 34
+[08-Mar-2011 16:18:48] PHP Fatal error:  Call to undefined method CI_Model::CI_Model() in /home/trashcan/public_html/application/models/master_model.php on line 34
+[08-Mar-2011 16:20:35] PHP Fatal error:  Call to undefined method CI_Model::CI_Model() in /home/trashcan/public_html/application/models/master_model.php on line 34
+[08-Mar-2011 16:26:38] PHP Fatal error:  Call to undefined method CI_Model::CI_Model() in /home/trashcan/public_html/application/models/pancake_model.php on line 34
+[08-Mar-2011 16:31:19] PHP Fatal error:  Call to undefined method CI_Model::CI_Model() in /home/trashcan/public_html/application/models/master_model.php on line 34
+[08-Mar-2011 16:37:22] PHP Fatal error:  Call to undefined method CI_Model::CI_Model() in /home/trashcan/public_html/application/models/master_model.php on line 34
+[08-Mar-2011 16:38:22] PHP Fatal error:  Call to undefined method CI_Model::CI_Model() in /home/trashcan/public_html/application/models/master_model.php on line 34
+[08-Mar-2011 16:38:24] PHP Fatal error:  Call to undefined method CI_Model::CI_Model() in /home/trashcan/public_html/application/models/master_model.php on line 34
+[14-Mar-2011 17:15:06] PHP Fatal error:  Class 'Settings' not found in /home/trashcan/public_html/application/views/admin/admin_createinvoice.php on line 114
+[14-Mar-2011 18:01:59] PHP Fatal error:  Class 'Settings' not found in /home/trashcan/public_html/application/views/admin/admin_createinvoice.php on line 108
+[14-Mar-2011 18:06:42] PHP Fatal error:  Class 'Settings' not found in /home/trashcan/public_html/application/views/admin/admin_createinvoice.php on line 106
+[14-Mar-2011 18:07:26] PHP Fatal error:  Class 'Settings' not found in /home/trashcan/public_html/application/views/admin/admin_createinvoice.php on line 106
+[14-Mar-2011 18:08:04] PHP Fatal error:  Class 'Settings' not found in /home/trashcan/public_html/application/views/admin/admin_createinvoice.php on line 106
+[14-Mar-2011 18:09:17] PHP Fatal error:  Cannot use object of type CI_DB_mysql_result as array in /home/trashcan/public_html/application/views/admin/admin_createinvoice.php on line 53
+[14-Mar-2011 18:11:30] PHP Fatal error:  Class 'Settings' not found in /home/trashcan/public_html/application/views/admin/admin_createinvoice.php on line 106
+[14-Mar-2011 18:20:53] PHP Fatal error:  Class 'Settings' not found in /home/trashcan/public_html/application/views/admin/admin_createinvoice.php on line 106
+[14-Mar-2011 18:22:11] PHP Fatal error:  Class 'Settings' not found in /home/trashcan/public_html/application/views/admin/admin_createinvoice.php on line 107
+[14-Mar-2011 18:23:47] PHP Fatal error:  Class 'Settings' not found in /home/trashcan/public_html/application/views/admin/admin_createinvoice.php on line 107
+[14-Mar-2011 18:24:24] PHP Fatal error:  Class 'Settings' not found in /home/trashcan/public_html/application/views/admin/admin_createinvoice.php on line 107
+[14-Mar-2011 18:24:46] PHP Fatal error:  Class 'Settings' not found in /home/trashcan/public_html/application/views/admin/admin_createinvoice.php on line 107
+[14-Mar-2011 18:25:21] PHP Fatal error:  Class 'Settings' not found in /home/trashcan/public_html/application/views/admin/admin_createinvoice.php on line 107
+[14-Mar-2011 18:25:45] PHP Fatal error:  Class 'Settings' not found in /home/trashcan/public_html/application/views/admin/admin_createinvoice.php on line 107
+[14-Mar-2011 18:25:54] PHP Fatal error:  Class 'Settings' not found in /home/trashcan/public_html/application/views/admin/admin_createinvoice.php on line 107
+[14-Mar-2011 18:26:57] PHP Parse error:  syntax error, unexpected T_ECHO in /home/trashcan/public_html/application/views/admin/admin_createinvoice.php on line 54
+[14-Mar-2011 18:27:19] PHP Fatal error:  Cannot use object of type CI_DB_mysql_result as array in /home/trashcan/public_html/application/views/admin/admin_createinvoice.php on line 54
+[14-Mar-2011 18:30:05] PHP Parse error:  syntax error, unexpected T_ECHO in /home/trashcan/public_html/application/views/admin/admin_createinvoice.php on line 54
+[14-Mar-2011 18:30:33] PHP Fatal error:  Class 'Settings' not found in /home/trashcan/public_html/application/views/admin/admin_createinvoice.php on line 107
+[14-Mar-2011 18:31:27] PHP Fatal error:  Class 'Settings' not found in /home/trashcan/public_html/application/views/admin/admin_createinvoice.php on line 107
+[14-Mar-2011 18:32:05] PHP Fatal error:  Class 'Settings' not found in /home/trashcan/public_html/application/views/admin/admin_createinvoice.php on line 107
+[14-Mar-2011 18:33:06] PHP Fatal error:  Class 'Settings' not found in /home/trashcan/public_html/application/views/admin/admin_createinvoice.php on line 107
+[14-Mar-2011 18:35:14] PHP Fatal error:  Cannot use object of type CI_DB_mysql_result as array in /home/trashcan/public_html/system/helpers/array_helper.php on line 46
+[14-Mar-2011 18:39:43] PHP Fatal error:  Call to a member function getCustEdit() on a non-object in /home/trashcan/public_html/application/controllers/admin.php on line 80
+[14-Mar-2011 18:40:09] PHP Fatal error:  Call to a member function result_array() on a non-object in /home/trashcan/public_html/application/models/customer_model.php on line 28
+[14-Mar-2011 18:40:56] PHP Fatal error:  Call to a member function num_rows() on a non-object in /home/trashcan/public_html/application/models/customer_model.php on line 28
+[14-Mar-2011 18:41:02] PHP Fatal error:  Call to a member function num_rows() on a non-object in /home/trashcan/public_html/application/models/customer_model.php on line 28
+[14-Mar-2011 18:42:27] PHP Fatal error:  Class 'Settings' not found in /home/trashcan/public_html/application/views/admin/admin_createinvoice.php on line 107
+[14-Mar-2011 18:44:43] PHP Fatal error:  Class 'Settings' not found in /home/trashcan/public_html/application/views/admin/admin_createinvoice.php on line 108
+[14-Mar-2011 18:45:21] PHP Fatal error:  Class 'Settings' not found in /home/trashcan/public_html/application/views/admin/admin_createinvoice.php on line 108
+[14-Mar-2011 18:47:30] PHP Parse error:  syntax error, unexpected '}' in /home/trashcan/public_html/application/models/customer_model.php on line 235
+[14-Mar-2011 18:47:48] PHP Fatal error:  Cannot use object of type CI_DB_mysql_result as array in /home/trashcan/public_html/application/views/admin/admin_createinvoice.php on line 54
+[14-Mar-2011 18:48:31] PHP Fatal error:  Cannot use object of type CI_DB_mysql_result as array in /home/trashcan/public_html/system/helpers/array_helper.php on line 46
+[14-Mar-2011 18:52:12] PHP Fatal error:  Class 'Settings' not found in /home/trashcan/public_html/application/views/admin/admin_createinvoice.php on line 109
+[14-Mar-2011 18:54:00] PHP Fatal error:  Call to a member function result_array() on a non-object in /home/trashcan/public_html/application/views/admin/admin_createinvoice.php on line 53
+[14-Mar-2011 18:54:53] PHP Fatal error:  Call to a member function result_array() on a non-object in /home/trashcan/public_html/application/views/admin/admin_createinvoice.php on line 53
+[14-Mar-2011 18:55:07] PHP Fatal error:  Class 'Settings' not found in /home/trashcan/public_html/application/views/admin/admin_createinvoice.php on line 106
+[14-Mar-2011 18:56:42] PHP Fatal error:  Class 'Settings' not found in /home/trashcan/public_html/application/views/admin/admin_createinvoice.php on line 109
+[14-Mar-2011 18:58:35] PHP Fatal error:  Class 'Settings' not found in /home/trashcan/public_html/application/views/admin/admin_createinvoice.php on line 109
+[14-Mar-2011 18:59:01] PHP Fatal error:  Class 'Settings' not found in /home/trashcan/public_html/application/views/admin/admin_createinvoice.php on line 109
+[14-Mar-2011 18:59:29] PHP Fatal error:  Class 'Settings' not found in /home/trashcan/public_html/application/views/admin/admin_createinvoice.php on line 109
+[14-Mar-2011 19:00:05] PHP Fatal error:  Class 'Settings' not found in /home/trashcan/public_html/application/views/admin/admin_createinvoice.php on line 107
+[14-Mar-2011 19:00:33] PHP Fatal error:  Class 'Settings' not found in /home/trashcan/public_html/application/views/admin/admin_createinvoice.php on line 108
+[14-Mar-2011 19:13:16] PHP Fatal error:  Class 'Currency' not found in /home/trashcan/public_html/application/views/admin/admin_createinvoice.php on line 140
+[14-Mar-2011 19:13:42] PHP Fatal error:  Class 'Currency' not found in /home/trashcan/public_html/application/views/admin/admin_createinvoice.php on line 139
+[15-Mar-2011 17:57:00] PHP Fatal error:  Class 'Currency' not found in /home/trashcan/public_html/application/views/admin/admin_createinvoice.php on line 139
+[15-Mar-2011 17:58:56] PHP Fatal error:  Class 'Currency' not found in /home/trashcan/public_html/application/views/admin/admin_createinvoice.php on line 139
+[15-Mar-2011 18:01:13] PHP Fatal error:  Class 'Currency' not found in /home/trashcan/public_html/application/views/admin/admin_createinvoice.php on line 139
+[15-Mar-2011 18:03:32] PHP Fatal error:  Class 'Currency' not found in /home/trashcan/public_html/application/views/admin/admin_createinvoice.php on line 139
+[15-Mar-2011 18:04:45] PHP Fatal error:  Call to undefined function __() in /home/trashcan/public_html/application/views/admin/admin_createinvoice.php on line 144
+[15-Mar-2011 18:05:14] PHP Fatal error:  Call to undefined function __() in /home/trashcan/public_html/application/views/admin/admin_createinvoice.php on line 144
+[16-Mar-2011 15:21:30] PHP Fatal error:  Class 'uagent' not found in /home/trashcan/public_html/application/views/test2.php on line 48
+[16-Mar-2011 15:21:31] PHP Fatal error:  Class 'uagent' not found in /home/trashcan/public_html/application/views/test2.php on line 48
+[16-Mar-2011 15:22:37] PHP Fatal error:  Class 'uagent' not found in /home/trashcan/public_html/application/views/test2.php on line 48
+[16-Mar-2011 15:33:53] PHP Fatal error:  Call to undefined method Gmap::addMarker() in /home/trashcan/public_html/application/controllers/test.php on line 47
+[16-Mar-2011 15:35:24] PHP Fatal error:  Call to undefined method Gmap::addMarker() in /home/trashcan/public_html/application/controllers/test.php on line 47
+[16-Mar-2011 15:37:05] PHP Fatal error:  Call to undefined method Gmap::addMarker() in /home/trashcan/public_html/application/controllers/test.php on line 47
+[16-Mar-2011 15:37:13] PHP Fatal error:  Call to undefined method Gmap::addMarker() in /home/trashcan/public_html/application/controllers/test.php on line 47
+[16-Mar-2011 15:37:44] PHP Fatal error:  Call to undefined method Gmap::addMarker() in /home/trashcan/public_html/application/controllers/test.php on line 47
+[16-Mar-2011 15:38:11] PHP Fatal error:  Class 'uagent' not found in /home/trashcan/public_html/application/views/test2.php on line 51
+[16-Mar-2011 15:38:12] PHP Fatal error:  Call to undefined method Gmap::addMarker() in /home/trashcan/public_html/application/controllers/test.php on line 45
+[16-Mar-2011 15:38:45] PHP Fatal error:  Call to undefined method Gmap::addMarker() in /home/trashcan/public_html/application/controllers/test.php on line 45
+[16-Mar-2011 15:44:37] PHP Fatal error:  Call to undefined method Gmap::addMarker() in /home/trashcan/public_html/application/controllers/test.php on line 45
+[16-Mar-2011 15:56:45] PHP Fatal error:  Call to undefined method Gmap::addMarker() in /home/trashcan/public_html/application/controllers/test.php on line 45
+[17-Mar-2011 16:43:06] PHP Fatal error:  Call to undefined function __() in /home/trashcan/public_html/application/views/admin/admin_createinvoice.php on line 131
+[18-Mar-2011 12:38:10] PHP Fatal error:  Call to undefined function __() in /home/trashcan/public_html/application/views/admin/admin_createinvoice.php on line 131
+[18-Mar-2011 15:58:06] PHP Fatal error:  Call to undefined function __() in /home/trashcan/public_html/application/views/admin/admin_createinvoice.php on line 131
+[18-Mar-2011 18:43:35] PHP Fatal error:  Call to private method Invoice_model::_generate_invoice_number() from context 'Admin' in /home/trashcan/public_html/application/controllers/admin.php on line 119
+[18-Mar-2011 18:44:21] PHP Fatal error:  Call to private method Invoice_model::generate_invoice_number() from context 'Admin' in /home/trashcan/public_html/application/controllers/admin.php on line 119
+[18-Mar-2011 19:18:44] PHP Fatal error:  Cannot use object of type stdClass as array in /home/trashcan/public_html/application/controllers/admin.php on line 119
+[18-Mar-2011 19:21:49] PHP Fatal error:  Function name must be a string in /home/trashcan/public_html/application/controllers/admin.php on line 125
+[22-Mar-2011 00:16:56] PHP Fatal error:  Call to undefined method Gmap::addMarker() in /home/trashcan/public_html/application/controllers/test.php on line 45
+[22-Mar-2011 00:45:06] PHP Fatal error:  Call to undefined method Gmap::addMarker() in /home/trashcan/public_html/application/controllers/test.php on line 45
+[22-Mar-2011 00:45:10] PHP Fatal error:  Call to undefined method Gmap::addMarker() in /home/trashcan/public_html/application/controllers/test.php on line 45
+[23-Mar-2011 18:43:27] PHP Fatal error:  Cannot use object of type CI_DB_mysql_result as array in /home/trashcan/public_html/application/views/admin/admin_createinvoice.php on line 23
+[23-Mar-2011 18:43:55] PHP Fatal error:  Cannot use object of type CI_DB_mysql_result as array in /home/trashcan/public_html/application/views/admin/admin_createinvoice.php on line 23
+[23-Mar-2011 18:47:36] PHP Fatal error:  Cannot use object of type CI_DB_mysql_result as array in /home/trashcan/public_html/application/views/admin/admin_createinvoice.php on line 23
+[23-Mar-2011 18:48:24] PHP Fatal error:  Cannot use object of type CI_DB_mysql_result as array in /home/trashcan/public_html/application/views/admin/admin_createinvoice.php on line 18
+[23-Mar-2011 18:48:58] PHP Fatal error:  Cannot use object of type CI_DB_mysql_result as array in /home/trashcan/public_html/application/views/admin/admin_createinvoice.php on line 18
+[23-Mar-2011 18:50:26] PHP Fatal error:  Cannot use object of type CI_DB_mysql_result as array in /home/trashcan/public_html/application/views/admin/admin_createinvoice.php on line 19
+[23-Mar-2011 18:51:03] PHP Fatal error:  Cannot use object of type CI_DB_mysql_result as array in /home/trashcan/public_html/application/views/admin/admin_createinvoice.php on line 19
+[23-Mar-2011 18:52:27] PHP Fatal error:  Cannot use object of type CI_DB_mysql_result as array in /home/trashcan/public_html/application/views/admin/admin_createinvoice.php on line 19
+[23-Mar-2011 18:55:39] PHP Fatal error:  Cannot use object of type CI_DB_mysql_result as array in /home/trashcan/public_html/application/views/admin/admin_createinvoice.php on line 19
+[23-Mar-2011 18:56:48] PHP Fatal error:  Cannot use object of type CI_DB_mysql_result as array in /home/trashcan/public_html/application/views/admin/admin_createinvoice.php on line 18
+[23-Mar-2011 19:00:25] PHP Fatal error:  Call to a member function result_array() on a non-object in /home/trashcan/public_html/application/views/admin/admin_createinvoice.php on line 76
+[23-Mar-2011 19:01:23] PHP Fatal error:  Call to a member function result_array() on a non-object in /home/trashcan/public_html/application/views/admin/admin_createinvoice.php on line 76
+[23-Mar-2011 19:01:47] PHP Fatal error:  Call to a member function result_array() on a non-object in /home/trashcan/public_html/application/views/admin/admin_createinvoice.php on line 76
+[23-Mar-2011 19:38:30] PHP Fatal error:  Call to undefined method Invoice_model::Insert_invoice() in /home/trashcan/public_html/application/controllers/admin.php on line 125
+[25-Mar-2011 14:53:11] PHP Fatal error:  Call to a member function getTrashCanName() on a non-object in /home/trashcan/public_html/application/models/invoice_model.php on line 137
+[25-Mar-2011 17:15:23] PHP Fatal error:  Call to a member function num_rows() on a non-object in /home/trashcan/public_html/application/views/admin/admin_custview.php on line 68
+[25-Mar-2011 17:45:19] PHP Fatal error:  Call to a member function num_rows() on a non-object in /home/trashcan/public_html/application/views/admin/admin_custview.php on line 69
+[25-Mar-2011 17:46:00] PHP Fatal error:  Call to a member function num_rows() on a non-object in /home/trashcan/public_html/application/views/admin/admin_custview.php on line 69
+[25-Mar-2011 17:47:51] PHP Fatal error:  Call to a member function num_rows() on a non-object in /home/trashcan/public_html/application/views/admin/admin_custview.php on line 69
+[25-Mar-2011 18:18:38] PHP Fatal error:  Call to a member function result_array() on a non-object in /home/trashcan/public_html/application/models/customer_model.php on line 44
+[25-Mar-2011 18:19:39] PHP Fatal error:  Call to a member function num_rows() on a non-object in /home/trashcan/public_html/application/views/admin/admin_custview.php on line 69
+[25-Mar-2011 18:20:26] PHP Fatal error:  Call to a member function num_rows() on a non-object in /home/trashcan/public_html/application/views/admin/admin_custview.php on line 69
+[25-Mar-2011 18:21:35] PHP Fatal error:  Call to a member function num_rows() on a non-object in /home/trashcan/public_html/application/views/admin/admin_custview.php on line 69
+[25-Mar-2011 18:23:27] PHP Fatal error:  Call to a member function num_rows() on a non-object in /home/trashcan/public_html/application/views/admin/admin_custview.php on line 69
+[07-Apr-2011 13:22:38] PHP Fatal error:  Call to a member function result_array() on a non-object in /home/trashcan/public_html/application/models/invoice_model.php on line 179
+[07-Apr-2011 14:47:00] PHP Fatal error:  Call to undefined method Customer_model::getCustEdit() in /home/trashcan/public_html/application/controllers/admin.php on line 149
+[07-Apr-2011 14:48:14] PHP Fatal error:  Call to undefined method Customer_model::getCustEdit() in /home/trashcan/public_html/application/controllers/admin.php on line 149
+[07-Apr-2011 14:49:10] PHP Fatal error:  Call to undefined method Customer_model::getCustEdit() in /home/trashcan/public_html/application/controllers/admin.php on line 149
