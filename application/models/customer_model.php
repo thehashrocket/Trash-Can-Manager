@@ -188,14 +188,30 @@
 
             }
 
-            function getInvoicesByID($id)
+            function getInvoicesById($id)
             {
-                $this->db->select('*')
-                    ->from('invoices')
-                    ->where('custid', $id);
+                $this->db->select('*');
+                $this->db->from('invoices');
+                $this->db->where('custid', $id);
                 return $this->db->get();
             }
 
+
+            function getInvoiceByInvId($invid)
+            {
+                $this->db->select('*');
+                $this->db->from('invoices');
+                $this->db->where('unique_id', $invid);
+                return $this->db->get();
+            }
+
+            function getInvoiceRowsByInvId($invid)
+            {
+                $this->db->select('*');
+                $this->db->from('invoice_rows');
+                $this->db->where('unique_id', $invid);
+                return $this->db->get();
+            }
 
 
             function archiveCust($user_id, $custid, $goback)
@@ -221,7 +237,6 @@
                 redirect($goback);
 
             }
-
 
 
             function updateCust($custid, $lastname, $firstname, $street1, $street2, $city, $state, $zip, $phonenumber, $userid, $goback)
@@ -407,7 +422,6 @@
             }
 
 
-
             function updateComment($custid, $commentid, $comment, $commenttype, $userid, $goback)
 
             {
@@ -507,10 +521,6 @@
 
 
             }
-
-
-
-
 
 }
 

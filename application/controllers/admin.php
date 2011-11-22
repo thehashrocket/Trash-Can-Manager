@@ -1,11 +1,6 @@
 <?php if (!defined('BASEPATH')) exit('No direct script access allowed');
 
 
-
-
-
-
-
 class Admin extends CI_Controller
 
 {
@@ -346,7 +341,7 @@ class Admin extends CI_Controller
 
 	}
 
-    function receivepayment($id)
+    function receivepayment($cid=NULL, $invid=NULL)
 
     {
         if (!$this->tank_auth->is_logged_in()) {
@@ -354,6 +349,11 @@ class Admin extends CI_Controller
             redirect('/auth/login');
 
         } else {
+
+            if ($_POST) {
+                $cid = (string)$this->input->post('custid', TRUE);
+                $invid = (string)$this->input->post('invoice', TRUE);
+            }
 
             $data['headerjs'] = NULL;
 
@@ -367,13 +367,18 @@ class Admin extends CI_Controller
 
             $data['trashcan_select'] = $this->Client_model->getTrashCanDropDown();
 
-            $data['customer'] = $this->Customer_model->getCustomerbyId($id);
+            $data['customer'] = $this->Customer_model->getCustomerbyId($cid);
 
 			$data['user_id']	= $this->tank_auth->get_user_id();
 
-            $data['custid']     = $id;
+            $data['custid']     = $cid;
+            $data['invid']      = $invid;
 
-            $data['invoice']    = $this->Customer_model->getInvoicesById($id);
+            $data['invoices']    = $this->Customer_model->getInvoicesById($cid);
+
+            $data['invoice']    = $this->Customer_model->getInvoiceByInvId($invid);
+
+            $data['invoicerows']= $this->Customer_model->getInvoiceRowsByInvId($invid);
 
 			$data['username']	= $this->tank_auth->get_username();
 

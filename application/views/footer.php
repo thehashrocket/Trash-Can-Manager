@@ -4,63 +4,7 @@
 
 
 
-<div id="prefooterwrap" class="clear">
 
-
-
-    <!-- <div id="prefooter" class="container">
-
-    
-
-    	<section class="slide-up-boxes">
-
-
-
-			<a href="/site/about" >
-
-				<h5>Who We Are</h5>
-
-				<div >We Are A Solar Energy Installation Company!</div>				
-
-			</a>
-
-            
-
-				
-
-			<a href="#" >
-
-				<h5>Who We Do It For</h5>
-
-				<div >We Work for Governments, Municipalities, and Corporations.</div>				
-
-			</a>
-
-            
-
-			
-
-			<a href="/site/getstarted" >
-
-				<h5>Get Started Now</h5>
-
-				<div >We Strive to Bring the Benefits of Solar Power to Everyone Saving Resources and Money!</div>				
-
-			</a>
-
-            
-
-
-
-		</section>
-
-    
-
-    </div> -->
-
-
-
-</div>
 
 <div id="footwrap" class="clear">
 
