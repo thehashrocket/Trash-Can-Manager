@@ -15,8 +15,8 @@
 |
 */
 
-$authLogId = '5x76S6LQ6dK';
-$authTranKey = '9tqW7wLd88AS8T43';
+$authLogId = '';
+$authTranKey = '';
 
 define("AUTHORIZENET_API_LOGIN_ID",$authLogId);
 define("AUTHORIZENET_TRANSACTION_KEY",$authTranKey);
